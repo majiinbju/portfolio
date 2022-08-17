@@ -1,0 +1,104 @@
+/******************************************************************************
+                            Stylesheet for Portfolio
+******************************************************************************/
+
+/* Root Value Stylings */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in-out;
+}
+
+:root {
+    --std-margin: 5rem;
+    --black: #0C0C0C;
+    --white: #FCFDF8;
+    --gray: #BFBFBF;
+    --primary-color: var(--black);
+    --secondary-color: var(--white);
+
+    --font-size: 2rem;
+    --font-color: var(--secondary-color);
+    --primary-font: -apple-system, BlinkMacSystemFont, sans-serif;
+    --secondary-font: Helvetica;
+
+    --border: 2px solid var(--secondary-color);
+    --border-radius: 20px;
+}
+
+/* Body Stylings */
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    /* margin: 0rem var(--std-margin); */
+    font-size: var(--font-size);
+    color: var(--font-color);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/* Main Stylings */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 2rem;
+}
+
+.main {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+}
+
+.project-grid img {
+    width: 100%;
+}
+
+.project-item {
+    /* background-color: red; */
+    grid-column: 1 / -1;
+    display: flex;
+    position: relative;
+    background: blue;
+    margin-bottom: 2rem;
+}
+
+.project-img {
+    position: relative;
+    width: 100%;
+    background: yellow;
+}
+
+.project-caption {
+    background: red;
+    position: absolute;
+}

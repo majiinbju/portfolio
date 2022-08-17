@@ -1,0 +1,7 @@
+Title: about
+
+----
+
+Text: vivek is a designer and developer based in new york and bombay. his work aims to bridge the gap between meaning and aesthetic through the use of simple design principles.
+
+----

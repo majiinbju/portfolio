@@ -1,0 +1,32 @@
+/* Footer Stylings */
+
+.footer {
+    display: flex;
+    /* width: 100%; */
+    position: sticky;
+    grid-column: 1 / -1;
+    bottom: var(--std-margin);
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.links {
+    width: 100%;
+    margin-top: calc(var(--std-margin) / 2);
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+.links a:hover {
+    /* color: var(--white); */
+    text-decoration: underline;
+}
+
+.link-list {
+    display: flex;
+    width: 100%;
+    grid-column: 1 / -1;
+    justify-content: space-between;
+}
