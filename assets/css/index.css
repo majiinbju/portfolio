@@ -17,15 +17,17 @@ html {
 
 :root {
     --std-margin: 3rem;
-    --black: #0C0C0C;
-    --white: #FCFDF8;
-    /* --gray: #BFBFBF; */
-    --primary-color: var(--white);
-    --secondary-color: var(--black);
+    /* --black: #121212; */
+    --black: black;
+    --white: #fffceb;
+    --gray:  #999999 ;
+    --primary-color: var(--black);
+    --secondary-color: var(--white);
 
-    --font-size: 2rem;
+    --font-size: 2.25rem;
     --font-color: var(--secondary-color);
     --primary-font: Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
+    /* --primary-font: 'Space Grotesk', sans-serif;; */
     --secondary-font: -apple-system;
 
     --border: 2px solid var(--secondary-color);
@@ -34,9 +36,11 @@ html {
 
 /* Body Stylings */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'); */
+
 body {
     padding: 0rem;
-    background-color: var(--primary-color);
+    background-color: var(--black);
     min-height: 100vh;
     margin: 0rem var(--std-margin);
     font-size: var(--font-size);
@@ -107,7 +111,13 @@ ul {
     grid-column: 1 / -1;
     /* grid-row: 1 / 4; */
     /* background: yellow; */
+    transform: scale(1);
     z-index: 1;
+    transition: all 0.15s ease-in-out;
+}
+
+.project-item:hover .project-img {
+    transform: scale(0.99);
 }
 
 .project-info {
@@ -118,10 +128,17 @@ ul {
     z-index: 2;
 }
 
+
 .project-title {
     font-weight: normal;
 }
 
 .project-caption {
+    color: var(--gray);
     margin: 0.5rem 0rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.project-item:hover .project-caption{
+    color: var(--white);
 }
