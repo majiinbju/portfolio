@@ -7,12 +7,14 @@
 	<ul class="project-grid">
 		<?php foreach ($page->children()->listed() as $project): ?>
 			<li class="project-item">
-				<a href="<?= $project->url() ?>">
-					<figure>
 						<img src="<?= $project->image()->url() ?>" alt="" class="project-img">
+						<div class="project-info">
+							<a href="<?= $project->url() ?>" class="project">
+								<h2 class="project-title"><?= $project->title() ?></h2>
+								<p class="project-caption"><?= $project->text() ?></p>
+							</a>
+						</div>
 						<!-- <?= $project->image() ?> -->
-						<figcaption class="project-caption"><?= $project->title() ?></figcaption>
-					</figure>
 				</a>
 			</li>
 		<?php endforeach ?>

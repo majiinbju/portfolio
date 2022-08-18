@@ -16,17 +16,17 @@ html {
 }
 
 :root {
-    --std-margin: 5rem;
+    --std-margin: 3rem;
     --black: #0C0C0C;
     --white: #FCFDF8;
-    --gray: #BFBFBF;
-    --primary-color: var(--black);
-    --secondary-color: var(--white);
+    /* --gray: #BFBFBF; */
+    --primary-color: var(--white);
+    --secondary-color: var(--black);
 
     --font-size: 2rem;
     --font-color: var(--secondary-color);
-    --primary-font: -apple-system, BlinkMacSystemFont, sans-serif;
-    --secondary-font: Helvetica;
+    --primary-font: Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
+    --secondary-font: -apple-system;
 
     --border: 2px solid var(--secondary-color);
     --border-radius: 20px;
@@ -35,17 +35,14 @@ html {
 /* Body Stylings */
 
 body {
-    display: flex;
-    flex-direction: column;
     padding: 0rem;
     background-color: var(--primary-color);
     min-height: 100vh;
-    /* margin: 0rem var(--std-margin); */
+    margin: 0rem var(--std-margin);
     font-size: var(--font-size);
     color: var(--font-color);
     font-family: var(--primary-font);
-    font-weight: 300;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 img {
@@ -81,24 +78,50 @@ ul {
 
 .project-grid img {
     width: 100%;
+    justify-self: center;
+}
+.project-item {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background: blue; */
+    /* border-top: 2px solid white;
+    border-bottom: 2px solid white; */
+    /* margin-bottom: 2rem; */
+    padding: 2rem 0;
 }
 
-.project-item {
-    /* background-color: red; */
+.project {
+    display: grid;
+    /* justify-items: center; */
     grid-column: 1 / -1;
-    display: flex;
-    position: relative;
-    background: blue;
-    margin-bottom: 2rem;
+    grid-template-columns: subgrid;
 }
 
 .project-img {
-    position: relative;
-    width: 100%;
-    background: yellow;
+    object-fit: cover;
+    border-radius: 16px;
+    grid-column: 1 / -1;
+    /* grid-row: 1 / 4; */
+    /* background: yellow; */
+    z-index: 1;
+}
+
+.project-info {
+    /* background-color: rgba(255, 255, 0, 0.2); */
+    margin-top: 2rem;
+    grid-column: 1 / -1;
+    /* grid-row: 3 / 4; */
+    z-index: 2;
+}
+
+.project-title {
+    font-weight: normal;
 }
 
 .project-caption {
-    background: red;
-    position: absolute;
+    margin: 0.5rem 0rem;
 }
