@@ -1,21 +1,12 @@
-
 /* Header Stylings */
-/* 
-header {
-    grid-column: 1 / -1;
-    grid-row: span 1;
-} */
-
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: calc(var(--std-margin));
-    top: 2.5rem;
-    /* padding-bottom: 1rem; */
-    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
     text-transform: capitalize;
-    /* grid-column: 2 / -2; */
+    margin-bottom: calc(var(--std-margin));
+}
+
+.header a {
 }
 
 .sticky {
@@ -24,78 +15,41 @@ header {
     z-index: 5;
 }
 
+.nav {
+    display: grid;
+    grid-column: -1 / 10;
+}
+
 .menu {
     display: flex;
+    justify-content: space-between;
+    grid-column: 1 / -1;
     margin: 0rem;
-    padding-left: 0rem;
+    padding: 0rem;
     list-style-type: none;
 }
 
-.menu > li {
-    text-align: right;
-    list-style-type: none;
-    margin-left: var(--std-margin);
+.menu li {
+    grid-column: span 1;
 }
-
-.menu > li:first-child {
-    margin-left: 0rem;
-}
-
-a {
-    color: currentColor;
-    text-decoration: none;
-}
-
-header li {
-    /* font-size: calc(var(--font-size) / 2); */
-    font-family: var(--secondary-font);
-}
-
-header a:hover {
-    /* text-decoration:  underline; */
-}
-
-/* header a:hover {
-    font-style: italic;
-}
- */
 
 .logo {
-    display: flex;
-    font-style: normal;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--primary-font);
-    font-weight: lighter;
+    font-weight: normal;
+    font-size: var(--font-size);
     /* padding: 0.5rem; */
 }
 
-h1 {
-    /* font-size: calc(var(--font-size) / 1); */
-    font-size: 2rem;
-    transition: all 0.25s ease-in-out;
-    margin: 0rem;
-    font-weight: 400;
-}
-
-h1:hover {
-    /* text-shadow: 0px 0px 1.5px var(--secondary-color);
-    font-style: normal; */
-}
-
 .un {
-  display: inline-block;
-  padding-bottom:2px;
-  background-image: linear-gradient(var(--white) 0 0);
-  background-position: 0 100%; /*OR bottom left*/
-  background-size: 0% 2px;
-  background-repeat: no-repeat;
-  transition:
-    background-size 0.3s,
-    background-position 0s 0.3s; /*change after the size immediately*/
+    display: inline-block;
+    padding-bottom: 2px;
+    background-image: linear-gradient(var(--white) 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s, background-position 0s 0.3s; /*change after the size immediately*/
 }
 
 .un:hover {
-  background-position: 0% 100%; /*OR bottom right*/
-  background-size: 100% 2px;
+    background-position: 0% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
 }
