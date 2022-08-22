@@ -41,7 +41,7 @@ html {
 
 body {
     padding: 0rem;
-    background-color: orange;
+    background-color: var(--black);
     min-height: 100vh;
     margin: var(--std-margin);
     font-size: var(--font-size);
@@ -110,15 +110,16 @@ a {
 
 .card {
     aspect-ratio: 1 / 1.25;
-    /* border: 2px solid black; */
+    /* border: var(--border); */
 }
 
 .card__content {
-    /* background-color: pink; */
+    /* background-color: var(--black); */
+    /* color: var(--black); */
+    z-index: 2;
     /* use align self end to make sure it doesn't stretch to fill */
     align-self: end;
-    margin: 0.5rem 0rem;
-    padding: 0.5rem 0rem;
+    padding: 1rem 0rem;
     /* box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1); */
 }
 
@@ -133,17 +134,17 @@ a {
     object-fit: cover;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 40rem) {
     .card.featured {
         grid-row: span 2;
         grid-column: span 2;
     }
 
     .card.featured .card__img {
-        aspect-ratio: 1 / 1.15;
+        aspect-ratio: 1 / 1.25;
     }
 
     .card.featured .card__title {
-        font-size: 1.75rem;
+        font-size: var(--font-size);
     }
 }

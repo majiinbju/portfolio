@@ -5,20 +5,19 @@
 <main class="">
 	<div class="container">
 		<div class="product__grid">
+
 			<div class="card stacked featured">
-					<img src="<?= $page->children()->first()->image()->url() ?>" alt="" class="	card__img">
+				<a href="<?= $page->children()->first()->url() ?>">
+					<img src="<?= $page->children()->first()->image()->url() ?>" alt="" class="card__img"/>
 					<div class="card__content">
 						<h2 class="card__title">
 							<?= $page->children()->first()->title() ?>
 						</h2>
-                	  	<!-- <p class="card__description">
-                	  		<?= $page->children()->first()->text() ?>
-                	  	</p> -->
 					</div>
-				</div>
+				</a>
+			</div>
 
 			<?php foreach ($page->children()->listed()->offset(1) as $work): ?>
-
 				<div class="card stacked">
 					<a href="<?= $work->url() ?>" class="">
 						<img src="<?= $work->image()->url() ?>" alt="" class="	card__img">
@@ -26,6 +25,7 @@
 							<h2 class="card__title">
 								<?= $work->title() ?>
 							</h2>
+	
                 	  		<!-- <p class="card__description">
                 	  			<?= $work->text() ?>
                 	  		</p> -->
