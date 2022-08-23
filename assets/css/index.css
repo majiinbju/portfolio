@@ -19,14 +19,14 @@ html {
     --std-margin: 3rem;
     /* --black: #121212; */
     --black: black;
-    --white: #fffceb;
+    --white: #fff7e0;
     --gray: #999999;
-    --primary-color: var(--black);
-    --secondary-color: var(--white);
+    --primary-color: var(--white);
+    --secondary-color: var(--black);
 
     --header-font-size: 1.75rem;
     --font-size: 2rem;
-    --font-color: var(--secondary-color);
+    --font-color: var(--primary-color);
     --primary-font: Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
     /* --primary-font: 'Space Grotesk', sans-serif;; */
     --secondary-font: -apple-system;
@@ -41,7 +41,7 @@ html {
 
 body {
     padding: 0rem;
-    background-color: var(--black);
+    background-color: var(--secondary-color);
     min-height: 100vh;
     margin: var(--std-margin);
     font-size: var(--font-size);
@@ -86,7 +86,7 @@ a {
 .container {
     /* display: subgrid; */
     /* grid-column: 1 / -1; */
-    max-width: 100rem;
+    max-width: 100%;
     margin-inline: auto;
     /* padding-inline: 2rem; */
 }
@@ -101,7 +101,7 @@ a {
     grid-row: 1 / 1;
 }
 
-.product__grid {
+.project__grid {
     display: grid;
     gap: 1rem;
     /* grid-template-columns: 1fr 1fr 1fr; */

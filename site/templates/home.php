@@ -4,13 +4,13 @@
 
 <main class="">
 	<div class="container">
-		<div class="product__grid">
+		<div class="project__grid">
 
 			<div class="card stacked featured">
 				<a href="<?= $page->children()->first()->url() ?>">
 					<img src="<?= $page->children()->first()->image()->url() ?>" alt="" class="card__img"/>
 					<div class="card__content">
-						<h2 class="card__title">
+						<h2 class="card__title un">
 							<?= $page->children()->first()->title() ?>
 						</h2>
 					</div>
@@ -22,8 +22,8 @@
 					<a href="<?= $work->url() ?>" class="">
 						<img src="<?= $work->image()->url() ?>" alt="" class="	card__img">
 						<div class="card__content">
-							<h2 class="card__title">
-								<?= $work->title() ?>
+							<h2 class="card__title un">
+							<?= $work->indexOf() ?> – <?= $work->title() ?>
 							</h2>
 	
                 	  		<!-- <p class="card__description">

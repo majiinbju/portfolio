@@ -13,7 +13,6 @@
      <?= css('/assets/css/header.css') ?>
      <?= css('/assets/css/footer.css') ?>
      <?= css('/assets/css/index.css') ?>
-     <?= css('/assets/css/project-grid.css') ?>
      <?= js('/assets/js/index.js') ?>
      <!-- auto selector will look for project template -->
      <?= css('@auto') ?>
