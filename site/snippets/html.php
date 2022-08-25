@@ -10,8 +10,8 @@
      <!-- Linking a css file with "css()" function -->
      <!-- <?= css('/assets/css/debug.css') ?> -->
      <?= css('/assets/css/reset.css') ?>
-     <?= css('/assets/css/header.css') ?>
-     <?= css('/assets/css/footer.css') ?>
+     <?= css('/assets/css/templates/header.css') ?>
+     <?= css('/assets/css/templates/footer.css') ?>
      <?= css('/assets/css/index.css') ?>
      <?= js('/assets/js/index.js') ?>
      <!-- auto selector will look for project template -->

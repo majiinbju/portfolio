@@ -1,0 +1,11 @@
+title: Projects
+
+sections:
+  projects:
+    type: pages
+    layout: cards
+    template: project
+    info: "{{ page.year }}"
+    image:
+      ratio: 4/5
+      cover: true

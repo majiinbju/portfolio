@@ -1,7 +1,5 @@
-Title: 🌺
+Title: Home
 
 ----
 
-Text: Vivek is a designer and developer based in New York City. 
-
-----
+Text: Vivek is a designer and developer based in New York City.

@@ -19,7 +19,8 @@ html {
     --std-margin: 3rem;
     /* --black: #121212; */
     --black: black;
-    --white: #fff7e0;
+    /* --white: #fff7e0; */
+    --white: white;
     --gray: #999999;
     --primary-color: var(--white);
     --secondary-color: var(--black);

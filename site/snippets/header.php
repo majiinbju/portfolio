@@ -15,12 +15,10 @@
                 <?= $item->title() ?>
               </a>
             </li>
-
-            <li>
-              &copy; 2022
-            </li>
-
           <?php endforeach ?>
+          <li>
+              &copy; 2022
+          </li>
         </ul>
 
       </nav>
