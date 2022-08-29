@@ -19,7 +19,7 @@
 
 .nav {
     display: grid;
-    grid-column: -1 / 10;
+    grid-column: -1 / 9;
 }
 
 .menu {

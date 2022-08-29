@@ -1,0 +1,19 @@
+title: Gallery Image
+
+accept: 
+  mime: image/*
+  maxsize: 4000000
+
+fields:
+  alt:
+    type: text
+    width: 1/2
+  caption:
+    type: text
+    width: 1/2
+  photographer:
+    type: text
+    width: 1/2
+  license:
+    type: text
+    width: 1/2

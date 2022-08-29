@@ -9,7 +9,7 @@
         </h2>
 
         <dl class="project-tag">
-                <dd><?= $page->tag() ?></dd>
+                <dd><?= $page->category() ?></dd>
                 <?php if ($page->link()->isNotEmpty()): ?>
                     <dd>
                         <a href="<?= $page->link() ?>" class="project-link">View Project</a>
@@ -19,14 +19,14 @@
         </dl>
 
         <a href="<?= $page->image()->url() ?>" class="project-img">
-            <img src="<?= $page->image()->url() ?>" alt="" class="project-img cover">
+            <img src="<?= $page->image()->resize(2400, 1600)->url() ?>" alt="" class="project-img cover">
         </a>
 
 
         <section class="section what">
             <?php if($image = $page->image('02_what.png')): ?>
             <a href="<?= $image->url() ?>" class="project-img">
-                <img src="<?= $image->url() ?>" alt="" class="project-img">
+                <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
             </a>
             <?php endif ?>
             <h2 class="project-header">01 - What</h2>
@@ -36,7 +36,7 @@
         <section class="section why">
             <?php if($image = $page->image('03_why.png')): ?>
             <a href="<?= $image->url() ?>" class="project-img">
-                <img src="<?= $image->url() ?>" alt="" class="project-img">
+                <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
             </a>
             <?php endif ?>
             <h2 class="project-header">02 - Why</h2>
@@ -46,7 +46,7 @@
         <section class="section process">
             <?php if($image = $page->image('04_how.png')): ?>
                 <a href="<?= $image->url() ?>" class="project-img">
-                    <img src="<?= $image->url() ?>" alt="">
+                    <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="">
                 </a>
             <?php endif ?>
             <h2 class="project-header">03 - Process</h2>
@@ -59,11 +59,13 @@
             <?php foreach($page->images()->offset(5) as $image): ?>
                 <li>
                     <a href="<?= $image->url() ?>" class="">
-                        <img src="<?= $image->url() ?>" alt="" class="project-img">
+                        <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
                     </a>
                 </li>
             <?php endforeach ?>
         </div>
+
+    <?php snippet('pagination') ?>
 
     </main>
 

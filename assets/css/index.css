@@ -69,11 +69,38 @@ a {
 }
 
 /* About Stylings */
-
 .about-text {
     padding-top: 2rem;
     grid-column: 1 / -1;
     width: 100%;
+}
+
+/* Pagination Navbar Stylings */
+.pagination {
+    grid-template-columns: 2fr;
+    display: grid;
+    font-size: 1.75rem;
+    grid-column: 1 / -1;
+    justify-content: space-between;
+}
+
+.pagination > a {
+    color: var(--gray);
+    transition: all 0.25s ease-in-out;
+}
+
+.pagination > a:hover {
+    color: var(--white);
+}
+
+.previous-page {
+    justify-self: start;
+    grid-row: 1 / 1;
+}
+
+.next-page {
+    justify-self: end;
+    grid-row: 1 / 1;
 }
 
 /* Main Stylings */

@@ -6,24 +6,49 @@ columns:
       info:
         type: fields
         fields:
-          tag:
+          Category:
+            label: Category
             type: text
+            width: 1/2
+            icon: tag
+            required: true
           year:
+            label: year
             type: number
+            min: 2016
+            width: 1/2
+            icon: clock
+            required: true
           link:
+            label: Link
             type: url
           what:
+            label: About the project
             type: textarea
+            help: Introduction to the project
+            required: true
           why:
+            label: Why?
             type: textarea
+            help: Why did you take the decisions that you did
+            required: true
           how:
+            label: Process
             type: textarea
+            help: What was the process?
+            required: true
+          tags:
+            label: Tags
+            type: tags
 
   - width: 1/2
     sections:
       gallery:
+        headline: Project Images
         type: files
         layout: cards
+        template: gallery-image
+        info: "{{ file.alt }} / {{ file.dimensions }}"
         image:
           ratio: 1/1
           cover: true

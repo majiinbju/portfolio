@@ -49,6 +49,9 @@
   "email": "E-Mail",
   "email.placeholder": "mail@beispiel.de",
 
+  "entries": "Einträge",
+  "entry": "Eintrag",
+
   "environment": "Umgebung",
 
   "error.access.code": "Ungültiger Code",
@@ -88,7 +91,7 @@
   "error.file.mime.missing": "Der Medientyp für \"{filename}\" konnte nicht erkannt werden",
   "error.file.minheight": "Die Bildhöhe muss mindestens {height} Pixel betragen",
   "error.file.minsize": "Die Datei ist zu klein",
-  "error.file.minwidth": "Die Bildbreite muss mindestens {height} Pixel betragen",
+  "error.file.minwidth": "Die Bildbreite muss mindestens {width} Pixel betragen",
   "error.file.name.missing": "Bitte gib einen Dateinamen an",
   "error.file.notFound": "Die Datei \"{filename}\" konnte nicht gefunden werden",
   "error.file.orientation": "Das Bildformat ist ungültig. Erwartetes Format: \"{orientation}\"",
@@ -156,6 +159,8 @@
   "error.site.update.permission": "Du darfst die Seite nicht bearbeiten",
 
   "error.template.default.notFound": "Die \"Default\"-Vorlage existiert nicht",
+
+  "error.unexpected": "Ein unerwarteter Fehler ist aufgetreten. Aktiviere den Debug Modus für weitere Informationen: https://getkirby.com/docs/reference/system/options/debug",
 
   "error.user.changeEmail.permission": "Du kannst die E-Mailadresse für den Account \"{name}\" nicht ändern",
   "error.user.changeLanguage.permission": "Du kannst die Sprache für den Account \"{name}\" nicht ändern",
@@ -292,6 +297,7 @@
   "hide": "Verbergen",
   "hour": "Stunde",
   "import": "Importieren",
+  "info": "Info",
   "insert": "Einf\u00fcgen",
   "insert.after": "Danach einfügen",
   "insert.before": "Davor einfügen",
@@ -334,10 +340,12 @@
   "license": "Lizenz",
   "license.buy": "Kaufe eine Lizenz",
   "license.register": "Registrieren",
+  "license.manage": "Verwalte deine Lizenzen",
   "license.register.help": "Den Lizenzcode findest du in der Bestätigungsmail zu deinem Kauf. Bitte kopiere und füge ihn ein, um Kirby zu registrieren.",
   "license.register.label": "Bitte gib deinen Lizenzcode ein",
   "license.register.success": "Vielen Dank für deine Unterstützung",
   "license.unregistered": "Dies ist eine unregistrierte Kirby-Demo",
+  "license.unregistered.label": "Unregistriert",
 
   "link": "Link",
   "link.text": "Linktext",
@@ -467,19 +475,27 @@
 
   "section.required": "Der Bereich ist Pflicht",
 
+  "security": "Sicherheit",
   "select": "Auswählen",
+  "server": "Server",
   "settings": "Einstellungen",
   "show": "Anzeigen",
+  "site.blueprint": "Du kannst zusätzliche Felder und Bereiche für die Seite in <strong>/site/blueprints/site.yml</strong> anlegen",
   "size": "Größe",
   "slug": "URL-Anhang",
   "sort": "Sortieren",
+
+  "stats.empty": "Keine Daten",
+  "system.issues.content": "Der content Ordner scheint öffentlich zugänglich zu sein",
+  "system.issues.debug": "Debugging muss im öffentlichen Betrieb ausgeschaltet sein",
+  "system.issues.git": "Der .git Ordner scheint öffentlich zugänglich zu sein",
+  "system.issues.https": "Wir empfehlen HTTPS für alle deine Seiten",
+  "system.issues.kirby": "Der kirby Ordner scheint öffentlich zugänglich zu sein",
+  "system.issues.site": "Der site Ordner scheint öffentlich zugänglich zu sein",
+
   "title": "Titel",
   "template": "Vorlage",
   "today": "Heute",
-
-  "server": "Server",
-
-  "site.blueprint": "Du kannst zusätzliche Felder und Bereiche für die Seite in <strong>/site/blueprints/site.yml</strong> anlegen",
 
   "toolbar.button.code": "Code",
   "toolbar.button.bold": "Fetter Text",
