@@ -23,7 +23,7 @@
 						<img src="<?= $work->image()->url() ?>" alt="" class="	card__img">
 						<div class="card__content">
 							<h2 class="card__title un">
-							<?= $work->indexOf() ?> – <?= $work->title() ?>
+							<?= $work->title() ?>
 							</h2>
 	
                 	  		<!-- <p class="card__description">
