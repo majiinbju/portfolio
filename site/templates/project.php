@@ -4,7 +4,7 @@
 
  
     <main class="main-grid">
-        <h2 class="project-title project-header">
+        <h2 class="project-title">
             <?= $page->title() ?>
         </h2>
 

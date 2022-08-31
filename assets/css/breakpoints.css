@@ -7,13 +7,17 @@
     body {
       font-size: 0.75rem;
     }
-    
+
   }
   
 @media screen and (max-height: 43rem) and (orientation: landscape) {
   
     body {
       font-size: 0.75rem;
+    }
+
+    .main-grid {
+      grid-template-columns: repeat(4, [col-start] 1fr);
     }
   
   }
