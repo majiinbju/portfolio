@@ -2,8 +2,10 @@
 
 <?php use Kirby\Text\SmartyPants; snippet('header') ?>
 
-<main class="">
-	
+<main class="main-grid">
+	<p class="">
+		<?= $page->text() ?>
+	</p>
 </main>
 
 <?php snippet('footer') ?>
