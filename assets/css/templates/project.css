@@ -106,14 +106,13 @@ section .project-img {
 	.project-title {
 		font-size: 1.75rem;
 		font-weight: normal;
-		grid-row: 2 / 3;
 		grid-column: 1 / -1;
 	}
 
 	.project-tag {
 		font-size: 1.75rem;
-		justify-self: start;
-		text-align: left;
+		justify-self: end;
+		text-align: right;
 		grid-row: 3 / 4;
 		grid-column: 1 / -1;
 	}
@@ -131,7 +130,7 @@ section .project-img {
 	}
 
 	.project-gallery {
-		grid-template-columns: ;
+		grid-template-columns: 1fr;
 	}
 
 	section .project-img {

@@ -13,7 +13,6 @@
      <?= css('/assets/css/templates/header.css') ?>
      <?= css('/assets/css/templates/footer.css') ?>
      <?= css('/assets/css/index.css') ?>
-     <?= js('/assets/js/index.js') ?>
      <!-- auto selector will look for project template -->
      <?= css('@auto') ?>
 

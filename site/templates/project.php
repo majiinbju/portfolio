@@ -3,7 +3,7 @@
 <?php use Kirby\Text\SmartyPants; snippet('header') ?>
 
  
-    <main class="main-grid">
+    <main class="main-grid" id="main">
         <h2 class="project-title">
             <?= $page->title() ?>
         </h2>
@@ -18,14 +18,14 @@
                 <dd><?= $page->year() ?></dd>
         </dl>
 
-        <a href="<?= $page->image()->url() ?>" class="project-img">
+        <a href="#" class="project-img">
             <img src="<?= $page->image()->resize(2400, 1600)->url() ?>" alt="" class="project-img cover">
         </a>
 
 
         <section class="section what">
             <?php if($image = $page->image('02_what.png')): ?>
-            <a href="<?= $image->url() ?>" class="project-img">
+            <a href="#" class="project-img">
                 <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
             </a>
             <?php endif ?>
@@ -35,7 +35,7 @@
 
         <section class="section why">
             <?php if($image = $page->image('03_why.png')): ?>
-            <a href="<?= $image->url() ?>" class="project-img">
+            <a href="#" class="project-img">
                 <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
             </a>
             <?php endif ?>
@@ -45,7 +45,7 @@
 
         <section class="section process">
             <?php if($image = $page->image('04_how.png')): ?>
-                <a href="<?= $image->url() ?>" class="project-img">
+                <a href="#" class="project-img">
                     <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="">
                 </a>
             <?php endif ?>
@@ -58,7 +58,7 @@
         <div class="project-gallery">
             <?php foreach($page->images()->offset(5) as $image): ?>
                 <li>
-                    <a href="<?= $image->url() ?>" class="">
+                    <a href="#" class="">
                         <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
                     </a>
                 </li>

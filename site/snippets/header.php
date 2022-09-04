@@ -16,7 +16,7 @@
               </a>
             </li>
           <?php endforeach ?>
-          <li>
+          <li class="gray">
               &copy; 2022
           </li>
         </ul>

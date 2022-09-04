@@ -43,12 +43,12 @@ html {
 body {
     padding: 0rem;
     background-color: var(--secondary-color);
-    min-height: 100vh;
     margin: var(--std-margin);
     font-size: var(--font-size);
     color: var(--font-color);
     font-family: var(--primary-font);
     line-height: 1.2;
+    min-height: 100vh;
 }
 
 img {
@@ -104,6 +104,7 @@ a {
 }
 
 /* Main Stylings */
+
 .main-grid {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
@@ -162,6 +163,28 @@ a {
     object-fit: cover;
 }
 
+/* Lightbox */
+#lightbox {
+    overflow: auto;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Project Grid Breakpoints */
 @media (min-width: 40rem) {
     .card.featured {
         grid-row: span 2;
@@ -177,8 +200,21 @@ a {
     }
 }
 
+/* Mobile Breakpoint Query */
 @media (max-width: 40rem) {
+    body {
+		font-size: calc(var(--font-size) / 2);
+	}
+
+    .nav {
+        display: grid;
+        margin-top: 0.5rem;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+
     .pagination {
         font-size: 1rem;
     }
 }
+

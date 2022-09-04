@@ -7,8 +7,6 @@
     /* mix-blend-mode: difference; */
 }
 
-.header a {
-}
 
 .sticky {
     top: var(--std-margin);
@@ -35,6 +33,10 @@
     grid-column: span 1;
 }
 
+.gray {
+    color: gray;
+}
+
 .logo {
     font-weight: normal;
     font-size: var(--font-size);
@@ -55,3 +57,8 @@
     background-position: 0% 100%; /*OR bottom right*/
     background-size: 100% 2px;
 }
+
+.menu {
+    margin-left: 0.25rem;
+}
+
