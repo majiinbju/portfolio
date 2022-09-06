@@ -67,6 +67,8 @@
 
     <?php snippet('pagination') ?>
 
+    <?= js('/assets/js/index.js') ?>
+
     </main>
 
 <?php snippet('footer') ?>

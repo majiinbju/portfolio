@@ -1,5 +1,6 @@
+
+
 <footer class="footer">
-<?= js('/assets/js/index.js') ?>
       <!-- <nav class="links">
             <ul class="link-list">
               <li><a href="<?=$site->github() ?>" target="_blank">Github</a></li>
@@ -11,5 +12,8 @@
 </footer>
 
 </body>
+
+<?= js('/assets/js/cursor.js') ?>
+
 
 </html>

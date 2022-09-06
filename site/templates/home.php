@@ -3,7 +3,7 @@
 <?php use Kirby\Text\SmartyPants; snippet('header') ?>
 
 <main class="main-grid">
-	<p class="">
+	<p class="about-text">
 		<?= $page->text() ?>
 	</p>
 </main>

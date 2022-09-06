@@ -2,4 +2,7 @@ Title: Home
 
 ----
 
-Text: Vivek is a designer and developer based in New York City.
+Text: A 24 year old designer driven by his passion to solve problems. His creative side is informed by a keen interest in different forms of media.
+<br>
+<br>
+He earned a scholarship and refined his skills at the Parsons School of Design in New York, where he started learning how to code and build interactive narratives.
