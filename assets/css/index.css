@@ -90,7 +90,7 @@ a {
 /* About Stylings */
 .about-text {
     padding-top: 2rem;
-    grid-column: span 8;
+    grid-column: span 6;
     width: 100%;
 }
 

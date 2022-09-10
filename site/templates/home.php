@@ -1,4 +1,5 @@
 <?php snippet('html') ?>
+<k-loader />
 
 <?php use Kirby\Text\SmartyPants; snippet('header') ?>
 
@@ -7,6 +8,8 @@
 		<?= $page->text() ?>
 	</p>
 </main>
+
+
 
 <?php snippet('footer') ?>
 
