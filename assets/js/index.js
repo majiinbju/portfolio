@@ -20,7 +20,7 @@ images.forEach(image => {
 
 lightbox.addEventListener('click', e => {
     // if the click target is not the lightbox, it will hide the element
-    if (e.target !== e.currentTarget) return
+    if (e.target == e.currentTarget) return
     lightbox.classList.remove('active')
 })
 })

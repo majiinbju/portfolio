@@ -202,10 +202,6 @@ a {
     display: none;
 }
 
-#lightbox img {
-    scale: 0.75;
-}
-
 #lightbox.active {
     display: flex;
     justify-content: center;
