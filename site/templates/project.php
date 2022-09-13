@@ -18,47 +18,54 @@
                 <dd><?= $page->year() ?></dd>
         </dl>
 
-        <a href="#" class="project-img">
+        <a class="project-img">
             <img src="<?= $page->image()->resize(2400, 1600)->url() ?>" alt="" class="project-img cover">
         </a>
 
 
-        <section class="section what">
-            <?php if($image = $page->image('02_what.png')): ?>
-            <a href="#" class="project-img">
-                <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
-            </a>
-            <?php endif ?>
-            <h2 class="project-header">01 - What</h2>
-            <p class="project-description"><?= $page->what() ?></p>
-        </section>
+        <?php if ($page->what()->isNotEmpty()): ?>
+            <section class="section what">
+                <?php if($image = $page->image('02_what.png')): ?>
+                <a class="project-img">
+                    <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
+                </a>
+                <?php endif ?>
+                <h2 class="project-header">01 - What</h2>
+                <p class="project-description"><?= $page->what() ?></p>
+            </section>
+        <?php endif ?>
 
+
+        <?php if ($page->why()->isNotEmpty()): ?>
         <section class="section why">
             <?php if($image = $page->image('03_why.png')): ?>
-            <a href="#" class="project-img">
+            <a class="project-img">
                 <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
             </a>
             <?php endif ?>
             <h2 class="project-header">02 - Why</h2>
             <p class="project-description"><?= $page->why() ?></p>
         </section>
+        <?php endif ?>
 
+        <?php if ($page->how()->isNotEmpty()): ?>
         <section class="section process">
             <?php if($image = $page->image('04_how.png')): ?>
-                <a href="#" class="project-img">
+                <a class="project-img">
                     <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="">
                 </a>
             <?php endif ?>
             <h2 class="project-header">03 - Process</h2>
             <p class="project-description"><?= $page->how() ?></p>
         </section>
+        <?php endif ?>
         
 
 
         <div class="project-gallery">
             <?php foreach($page->images()->offset(5) as $image): ?>
                 <li>
-                    <a href="#" class="">
+                    <a class="">
                         <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
                     </a>
                 </li>

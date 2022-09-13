@@ -11,9 +11,10 @@
 
 </footer>
 
-</body>
 
 <?= js('/assets/js/cursor.js') ?>
+
+</body>
 
 
 </html>
