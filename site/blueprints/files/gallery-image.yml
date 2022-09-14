@@ -2,7 +2,8 @@ title: Gallery Image
 
 accept: 
   mime: image/*
-  maxsize: 4000000
+  type: image
+  maxsize: 400000000
 
 fields:
   alt:

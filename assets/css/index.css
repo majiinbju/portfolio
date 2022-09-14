@@ -49,7 +49,6 @@ body {
     font-family: var(--primary-font);
     line-height: 1.2;
     min-height: 100vh;
-    cursor: none;
 }
 
 img {

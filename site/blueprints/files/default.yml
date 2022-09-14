@@ -3,3 +3,8 @@ title: File
 fields:
   alt:
     type: text
+
+accept: 
+  mime: image/*
+  type: image
+  maxsize: 400000000

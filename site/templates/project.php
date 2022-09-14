@@ -19,7 +19,7 @@
         </dl>
 
         <a class="project-img">
-            <img src="<?= $page->image()->resize(2400, 1600)->url() ?>" alt="" class="project-img cover">
+            <img src="<?= $page->image('01_cover.png')->resize(2400, 1600)->url() ?>" alt="" class="project-img cover">
         </a>
 
 
