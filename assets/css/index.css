@@ -49,6 +49,7 @@ body {
     font-family: var(--primary-font);
     line-height: 1.2;
     min-height: 100vh;
+    cursor: default;
 }
 
 img {
@@ -66,7 +67,6 @@ a {
     padding: 0rem;
     color: currentColor;
     text-decoration: none;
-    cursor: none;
 }
 
 /* Cursor Stylings */
