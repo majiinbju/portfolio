@@ -26,17 +26,14 @@ columns:
             label: About the project
             type: textarea
             help: Introduction to the project
-            required: true
           why:
             label: Why?
             type: textarea
             help: Why did you take the decisions that you did
-            required: true
           how:
             label: Process
             type: textarea
             help: What was the process?
-            required: true
           tags:
             label: Tags
             type: tags

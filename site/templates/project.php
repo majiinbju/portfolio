@@ -63,7 +63,7 @@
 
 
         <div class="project-gallery">
-            <?php foreach($page->images()->offset(5) as $image): ?>
+            <?php foreach($page->images()->offset(6) as $image): ?>
                 <li>
                     <a class="">
                         <img src="<?= $image->resize(2400, 1600)->url() ?>" alt="" class="project-img">
