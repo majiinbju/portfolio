@@ -182,7 +182,7 @@ a {
 
 .card__img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.25;
     object-fit: cover;
 }
 

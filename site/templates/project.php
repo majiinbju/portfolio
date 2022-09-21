@@ -20,6 +20,7 @@
 
         <a class="project-img">
             <img src="<?= $page->image('01_cover.png')->url() ?>" class="project-img cover">
+            
         </a>
 
 

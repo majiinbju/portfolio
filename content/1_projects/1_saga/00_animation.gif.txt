@@ -1,0 +1,21 @@
+Alt: 
+
+----
+
+Caption: 
+
+----
+
+Photographer: 
+
+----
+
+License: 
+
+----
+
+Sort: 6
+
+----
+
+Template: gallery-image
