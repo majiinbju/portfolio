@@ -6,3 +6,6 @@ Text: A 24 year old designer driven by his passion to solve problems. His creati
 <br>
 <br>
 He earned a scholarship and refined his skills at the Parsons School of Design in New York, where he started learning how to code and build interactive narratives.
+<br>
+<br>
+He has previously worked at <a href="https://www.bokaap.design/" style="text-decoration: underline;">Bokaap Design</a> and <a href="https://ideaspice.com/" style="text-decoration: underline;">IdeaSpice</a>, in Mumbai.

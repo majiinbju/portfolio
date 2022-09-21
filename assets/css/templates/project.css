@@ -81,7 +81,7 @@ section .project-img {
 	margin: calc(var(--std-margin) / 2) 0rem;
 	list-style-type: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-column: 1 / -1;
 }
 

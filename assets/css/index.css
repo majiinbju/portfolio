@@ -48,7 +48,7 @@ body {
     color: var(--font-color);
     font-family: var(--primary-font);
     line-height: 1.2;
-    min-height: 100vh;
+    min-height: 100%;
     cursor: default;
 }
 
@@ -89,7 +89,7 @@ a {
 /* About Stylings */
 .about-text {
     padding-top: 2rem;
-    grid-column: span 6;
+    grid-column: span 4;
     width: 100%;
 }
 
@@ -188,8 +188,7 @@ a {
 
 /* Lightbox */
 #lightbox {
-    overflow: auto;
-    position: fixed;
+    position: absolute;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -197,8 +196,22 @@ a {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    scale: 0.75;
     display: none;
+}
+
+#shadow {
+    display: none;
+    position: fixed;top:0;right:0;bottom:0;left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#shadow.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #lightbox.active {

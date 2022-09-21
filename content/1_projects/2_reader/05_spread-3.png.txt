@@ -1,0 +1,5 @@
+Sort: 7
+
+----
+
+Template: gallery-image
