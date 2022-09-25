@@ -19,10 +19,10 @@ html {
     --std-margin: 3rem;
     /* --black: #121212; */
     --black: black;
-    /* --white: #fff7e0; */
-    --white: white;
+    --white: #fff7e0;
+    /* --white: white; */
     --gray: #999999;
-    --primary-color: var(--white);
+    --primary-color: #ffb0e3;
     --secondary-color: var(--black);
 
     --header-font-size: 1.75rem;
