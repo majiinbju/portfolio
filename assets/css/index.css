@@ -87,11 +87,26 @@ a {
 }
 
 /* About Stylings */
-.about-text {
+.text {
+    width: 100%;
     padding-top: 2rem;
     text-indent: 3rem;
+}
+
+.about {
     grid-column: span 6;
-    width: 100%;
+}
+
+.about-links {
+    grid-column: span 6;
+    text-indent: 0;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.text > a:hover {
+    background: var(--primary-color);
+    color: black;
 }
 
 /* Pagination Navbar Stylings */
@@ -177,8 +192,8 @@ a {
 /* Mobile Breakpoint Query */
 @media (max-width: 40rem) {
     body {
-		font-size: 1.5rem;
-        margin-bottom: 1rem;
+        cursor: none;
+        font-size: 1.25rem;
 	}
 
     .main-grid {
@@ -186,7 +201,7 @@ a {
         grid-row-gap: 1rem;
     }
 
-    .about-text {
+    .text {
         padding-top: 2rem;
         grid-column: 1 / -1;
         width: 100%;

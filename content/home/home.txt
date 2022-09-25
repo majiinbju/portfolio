@@ -2,10 +2,20 @@ Title: Home
 
 ----
 
-Text: A 24 year old designer driven by his passion to solve problems. His creative side is informed by a keen interest in different forms of media.
+About: A 24 year old designer driven by his passion to solve problems. His creative side is informed by a keen interest in different forms of media.
 <br>
 <br>
 He earned a scholarship and refined his skills at the Parsons School of Design in New York, where he started learning how to code and build interactive narratives.
 <br>
 <br>
 He has previously worked at <a href="https://www.bokaap.design/" style="text-decoration: underline;">Bokaap Design</a> and <a href="https://ideaspice.com/" style="text-decoration: underline;">IdeaSpice</a>, in Mumbai.
+
+----
+
+Links:
+        <a href="./assets/resume/resume.pdf" target="_blank" "">Resume</a><br>
+        <a href="https://github.com/majiinbju" target="_blank" "">Github</a><br>
+        <a href="https://www.are.na/hrv2wnvokm4" target="_blank" "">Are.na</a><br>
+
+----
+
