@@ -55,7 +55,7 @@
 
 .un:hover {
     background-position: 0% 100%; /*OR bottom right*/
-    background-size: 100% 2px;
+    background-size: 100% 1px;
 }
 
 .menu {

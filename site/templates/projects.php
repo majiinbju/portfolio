@@ -6,7 +6,8 @@
 	<div class="container">
 		<div class="project__grid">
 
-			<div class="card stacked featured">
+			<!-- <div class="card stacked"> -->
+			<div class="card stacked">
 				<a href="<?= $page->children()->first()->url() ?>">
 					<img src="<?= $page->children()->first()->image()->url() ?>" alt="" class="card__img"/>
 					<div class="card__content">

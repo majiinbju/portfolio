@@ -139,56 +139,6 @@ a {
     /* padding-inline: 2rem; */
 }
 
-.stacked {
-    display: grid;
-}
-
-/* selecting direct child inside */
-.stacked > * {
-    grid-column: 1 / -1;
-    grid-row: 1 / 1;
-}
-
-.project__grid {
-    display: grid;
-    gap: 1rem;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
-
-.card {
-    grid-row: span 2;
-    grid-column: span 2;
-    aspect-ratio: 1 / 1.25;
-    /* border: var(--border); */
-}
-
-.card:hover .un {
-    background-position: 0% 100%; /*OR bottom right*/
-    background-size: 100% 2px;
-}
-
-.card__content {
-    /* background-color: var(--black); */
-    /* color: var(--black); */
-    z-index: 2;
-    /* use align self end to make sure it doesn't stretch to fill */
-    align-self: end;
-    padding: 1rem 0rem;
-    /* box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1); */
-}
-
-.card__title {
-    font-size: var(--font-size);
-    font-weight: normal;
-}
-
-.card__img {
-    width: 100%;
-    aspect-ratio: 1 / 1.25;
-    object-fit: cover;
-}
-
 /* Lightbox */
 #lightbox {
     position: absolute;
@@ -223,26 +173,12 @@ a {
     align-items: center;
 }
 
-/* Project Grid Breakpoints */
-@media (min-width: 40rem) {
-   /*  .card.featured {
-        grid-row: span 2;
-        grid-column: span 2;
-    } */
-
-    .card.featured .card__img {
-        aspect-ratio: 1 / 1.25;
-    }
-
-    .card.featured .card__title {
-        font-size: var(--font-size);
-    }
-}
 
 /* Mobile Breakpoint Query */
 @media (max-width: 40rem) {
     body {
-		font-size: calc(var(--font-size) / 2);
+		font-size: 1.5rem;
+        margin-bottom: 1rem;
 	}
 
     .main-grid {
@@ -251,9 +187,9 @@ a {
     }
 
     .about-text {
-    padding-top: 2rem;
-    grid-column: 1 / -1;
-    width: 100%;
+        padding-top: 2rem;
+        grid-column: 1 / -1;
+        width: 100%;
     }
 
     .nav {
