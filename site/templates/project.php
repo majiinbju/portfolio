@@ -31,7 +31,7 @@
                     <img src="<?= $image->url() ?>" class="project-img">
                 </a>
                 <?php endif ?>
-                <h2 class="project-header">01 - What</h2>
+                <!-- <h2 class="project-header">01 - What</h2> -->
                 <p class="project-description"><?= $page->what() ?></p>
             </section>
         <?php endif ?>
@@ -44,7 +44,7 @@
                 <img src="<?= $image->url() ?>" class="project-img">
             </a>
             <?php endif ?>
-            <h2 class="project-header">02 - Why</h2>
+            <!-- <h2 class="project-header">02 - Why</h2> -->
             <p class="project-description"><?= $page->why() ?></p>
         </section>
         <?php endif ?>
@@ -56,7 +56,7 @@
                     <img src="<?= $image->url() ?>">
                 </a>
             <?php endif ?>
-            <h2 class="project-header">03 - Process</h2>
+            <!-- <h2 class="project-header">03 - Process</h2> -->
             <p class="project-description"><?= $page->how() ?></p>
         </section>
         <?php endif ?>

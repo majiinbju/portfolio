@@ -89,7 +89,8 @@ a {
 /* About Stylings */
 .about-text {
     padding-top: 2rem;
-    grid-column: span 4;
+    text-indent: 3rem;
+    grid-column: span 6;
     width: 100%;
 }
 
@@ -156,6 +157,8 @@ a {
 }
 
 .card {
+    grid-row: span 2;
+    grid-column: span 2;
     aspect-ratio: 1 / 1.25;
     /* border: var(--border); */
 }
@@ -222,10 +225,10 @@ a {
 
 /* Project Grid Breakpoints */
 @media (min-width: 40rem) {
-    .card.featured {
+   /*  .card.featured {
         grid-row: span 2;
         grid-column: span 2;
-    }
+    } */
 
     .card.featured .card__img {
         aspect-ratio: 1 / 1.25;

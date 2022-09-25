@@ -25,14 +25,17 @@
 
 .what {
 	grid-row: 3 / 4;
+	text-indent: 0rem;
 }
 
 .why {
 	grid-row: 4 / 5;
+	text-indent: 4rem;
 }
 
 .process {
 	grid-row: 5 / 6;
+	text-indent: 4rem;
 }
 
 .project-img {
