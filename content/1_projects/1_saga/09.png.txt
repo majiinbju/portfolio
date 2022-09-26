@@ -1,5 +1,0 @@
-Sort: 11
-
-----
-
-Template: gallery-image
