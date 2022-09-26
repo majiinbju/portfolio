@@ -1,2 +1,7 @@
+title: Site
 preset: pages
+icon: page
 unlisted: true
+options:
+  preview: https://bajju.info
+

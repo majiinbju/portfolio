@@ -2,11 +2,7 @@ Title: Vivek
 
 ----
 
-Landing: Designer + Creative Coder 
-
-----
-
-Resume: ./assets/resume/resume.pdf
+Description: A 24 year old designer driven by his passion to solve problems. His creative side is informed by a keen interest in different forms of media.
 
 ----
 

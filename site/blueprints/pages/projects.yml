@@ -1,5 +1,7 @@
 title: Projects
-
+image:
+  icon: ✉️
+  back: "black"
 sections:
   published:
     headline: Published
