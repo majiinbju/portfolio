@@ -87,26 +87,11 @@ a {
 }
 
 /* About Stylings */
-.text {
-    width: 100%;
+.about-text {
     padding-top: 2rem;
     text-indent: 3rem;
-}
-
-.about {
     grid-column: span 6;
-}
-
-.about-links {
-    grid-column: span 6;
-    text-indent: 0;
-    text-align: left;
-    text-decoration: underline;
-}
-
-.text > a:hover {
-    background: var(--primary-color);
-    color: black;
+    width: 100%;
 }
 
 /* Pagination Navbar Stylings */
@@ -192,8 +177,8 @@ a {
 /* Mobile Breakpoint Query */
 @media (max-width: 40rem) {
     body {
-        cursor: none;
-        font-size: 1.25rem;
+		font-size: 1.5rem;
+        margin-bottom: 1rem;
 	}
 
     .main-grid {
@@ -201,7 +186,7 @@ a {
         grid-row-gap: 1rem;
     }
 
-    .text {
+    .about-text {
         padding-top: 2rem;
         grid-column: 1 / -1;
         width: 100%;
