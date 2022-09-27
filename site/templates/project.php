@@ -19,7 +19,7 @@
         </dl>
 
         <a class="project-img">
-            <img src="<?= $page->image('01_cover.png')->url() ?>" class="project-img cover">
+            <img src="<?= $page->image('01_cover.png')->resize(1440)->url() ?>" class="project-img cover">
             
         </a>
 
@@ -28,7 +28,7 @@
             <section class="section what">
                 <?php if($image = $page->image('02_what.png')): ?>
                 <a class="project-img">
-                    <img src="<?= $image->url() ?>" class="project-img">
+                    <img src="<?= $image->resize(1440)->url() ?>" class="project-img">
                 </a>
                 <?php endif ?>
                 <!-- <h2 class="project-header">01 - What</h2> -->
@@ -41,7 +41,7 @@
         <section class="section why">
             <?php if($image = $page->image('03_why.png')): ?>
             <a class="project-img">
-                <img src="<?= $image->url() ?>" class="project-img">
+                <img src="<?= $image->resize(1440)->url() ?>" class="project-img">
             </a>
             <?php endif ?>
             <!-- <h2 class="project-header">02 - Why</h2> -->
@@ -53,7 +53,7 @@
         <section class="section process">
             <?php if($image = $page->image('04_how.png')): ?>
                 <a class="project-img">
-                    <img src="<?= $image->url() ?>">
+                    <img src="<?= $image->resize(1440)->url() ?>">
                 </a>
             <?php endif ?>
             <!-- <h2 class="project-header">03 - Process</h2> -->
@@ -67,7 +67,7 @@
             <?php foreach($page->images()->offset(6) as $image): ?>
                 <li>
                     <a class="">
-                        <img src="<?= $image->url() ?>" class="project-img">
+                        <img src="<?= $image->resize(1440)->url() ?>" class="project-img">
                     </a>
                 </li>
             <?php endforeach ?>
