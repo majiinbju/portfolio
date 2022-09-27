@@ -36,6 +36,11 @@ html {
     --border-radius: 20px;
 }
 
+::selection {
+    background: var(--primary-color);
+    color: black;
+  }
+
 /* Body Stylings */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'); */
@@ -91,7 +96,23 @@ a {
     padding-top: 2rem;
     text-indent: 3rem;
     grid-column: span 6;
+<<<<<<< HEAD
     width: 100%;
+=======
+}
+
+.about-links {
+    grid-column: span 6;
+    text-indent: 0;
+    text-align: right;
+    align-self: end;
+    text-decoration: underline;
+}
+
+.text > a:hover {
+    background: var(--primary-color);
+    color: black;
+>>>>>>> b130aab729f22fe66f6768b9551f63a7c2ca2431
 }
 
 /* Pagination Navbar Stylings */
