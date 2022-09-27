@@ -10,10 +10,12 @@
       </nav> -->
 
 </footer>
-
-
 <?= js('/assets/js/cursor.js') ?>
-
+<?= js('/assets/js/lozad.min.js') ?>
+<script>
+      const observer = lozad();
+      observer.observe();
+</script>
 </body>
 
 
