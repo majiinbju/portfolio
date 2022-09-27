@@ -36,6 +36,11 @@ html {
     --border-radius: 20px;
 }
 
+::selection {
+    background: var(--primary-color);
+    color: black;
+  }
+
 /* Body Stylings */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'); */
@@ -100,7 +105,8 @@ a {
 .about-links {
     grid-column: span 6;
     text-indent: 0;
-    text-align: left;
+    text-align: right;
+    align-self: end;
     text-decoration: underline;
 }
 

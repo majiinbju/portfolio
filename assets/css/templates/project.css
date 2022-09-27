@@ -81,6 +81,7 @@ section .project-img {
 }
 
 .project-gallery {
+	display: grid;
 	margin: calc(var(--std-margin) / 2) 0rem;
 	list-style-type: none;
 	display: grid;
@@ -89,7 +90,14 @@ section .project-img {
 }
 
 .project-gallery img {
+	display: flex;
 	margin-bottom: var(--std-margin);
+	align-self: center;
+}
+
+.center {
+	align-self: center;
+	justify-self: center;
 }
 
 @media (max-width: 40rem) {

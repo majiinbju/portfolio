@@ -7,6 +7,7 @@
     <!-- "$site" object contains the information of site.txt -->
     <title><?= $site->tab() ?></title>
     <meta name="description" content="<?= $site->description() ?>">
+    <meta name=”robots” content="index, follow">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
     <!-- Linking a css file with "css()" function -->
