@@ -18,7 +18,7 @@
 .card {
     /* grid-row: span 2; */
     /* grid-column: span 2; */
-    aspect-ratio: 1.25 / 1;
+    aspect-ratio: 16 / 10;
     /* border: var(--border); */
 }
 
@@ -45,7 +45,7 @@
 
 .card__img {
     width: 100%;
-    aspect-ratio: 1.25 / 1;
+    aspect-ratio: 16 / 10;
     object-fit: cover;
     margin: 1rem;
 }
@@ -63,7 +63,7 @@
     }
 
     .card.featured .card__img {
-        aspect-ratio: 1 / 1.25;
+        aspect-ratio: 16 / 10;
     }
 
     .card.featured .card__title {
