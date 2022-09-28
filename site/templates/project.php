@@ -19,14 +19,14 @@
         </dl>
 
         <a class="project-img">
-            <img src="<?= $page->image('01_cover.png')->resize(1440)->url() ?>" class="project-img cover lozad">
+            <img src="<?= $page->image('01_cover.jpg')->resize(1440)->url() ?>" class="project-img cover lozad">
             
         </a>
 
 
         <?php if ($page->what()->isNotEmpty()): ?>
             <section class="section what">
-                <?php if($image = $page->image('02_what.png')): ?>
+                <?php if($image = $page->image('02_what.jpg')): ?>
                 <a class="project-img">
                     <img src="<?= $image->resize(1440)->url() ?>" class="project-img lozad">
                 </a>
@@ -39,7 +39,7 @@
 
         <?php if ($page->why()->isNotEmpty()): ?>
         <section class="section why">
-            <?php if($image = $page->image('03_why.png')): ?>
+            <?php if($image = $page->image('03_why.jpg')): ?>
             <a class="project-img">
                 <img src="<?= $image->resize(1440)->url() ?>" class="project-img lozad">
             </a>
@@ -51,7 +51,7 @@
 
         <?php if ($page->how()->isNotEmpty()): ?>
         <section class="section process">
-            <?php if($image = $page->image('04_how.png')): ?>
+            <?php if($image = $page->image('04_how.jpg')): ?>
                 <a class="project-img lozad">
                     <img 
                     src="<?= $image->resize(1440)->url() ?>"
