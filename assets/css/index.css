@@ -98,6 +98,10 @@ a {
     text-indent: 3rem;
 }
 
+.text > a {
+    text-decoration: underline;
+}
+
 .about {
     grid-column: span 6;
 }
@@ -110,7 +114,7 @@ a {
     text-decoration: underline;
 }
 
-.text > a:hover {
+a:hover {
     background: var(--primary-color);
     color: black;
 }

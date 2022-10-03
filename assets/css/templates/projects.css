@@ -15,6 +15,20 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
+.project__grid a:hover {
+    background: none;
+    color: var(--primary-color);
+}
+
+
+.project__grid a:hover h2 {
+    background-color: var(--primary-color);
+    color: black;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+
 .card {
     /* grid-row: span 2; */
     /* grid-column: span 2; */
@@ -22,18 +36,12 @@
     /* border: var(--border); */
 }
 
-.card:hover .un {
-    background-position: 0% 100%; /*OR bottom right*/
-    background-size: 100% 1px;
-}
-
 .card__content {
     /* background-color: var(--black); */
     /* color: var(--black); */
     z-index: 2;
     /* use align self end to make sure it doesn't stretch to fill */
-    align-self: end;
-    padding: 1rem 0rem;
+    /* padding: 1rem 0rem; */
     /* box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1); */
 }
 
@@ -47,7 +55,7 @@
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
-    margin: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Project Grid Breakpoints */

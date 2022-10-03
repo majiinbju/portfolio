@@ -2,7 +2,7 @@
 
       <!-- $site used as a selector for site.txt -->
       <a href="<?= $site->url() ?>">
-        <h1 class="logo un"><?= $site->title() ?></h1>
+        <h1 class="logo"><?= $site->title() ?></h1>
       </a>
 
       <nav class="nav">
@@ -11,7 +11,7 @@
           <?php foreach ($site->children()->listed() as $item): ?>
 
             <li>
-              <a href="<?= $item->url() ?>" class="un">
+              <a href="<?= $item->url() ?>">
                 <?= $item->title() ?>
               </a>
             </li>

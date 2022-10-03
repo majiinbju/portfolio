@@ -11,7 +11,7 @@
 				<a href="<?= $page->children()->first()->url() ?>">
 					<img src="<?= $page->children()->first()->image()->url() ?>" alt="" class="card__img"/>
 					<div class="card__content">
-						<h2 class="card__title un">
+						<h2 class="card__title">
 							<?= $page->children()->first()->title() ?>
 						</h2>
 					</div>
@@ -23,7 +23,7 @@
 					<a href="<?= $work->url() ?>" class="">
 						<img src="<?= $work->image()->url() ?>" alt="" class="	card__img">
 						<div class="card__content">
-							<h2 class="card__title un">
+							<h2 class="card__title">
 							<?= $work->title() ?>
 							</h2>
 	
