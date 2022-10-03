@@ -117,6 +117,8 @@ a {
 a:hover {
     background: var(--primary-color);
     color: black;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 /* Pagination Navbar Stylings */
