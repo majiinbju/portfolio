@@ -21,7 +21,7 @@
 			<?php foreach ($page->children()->listed()->offset(1) as $work): ?>
 				<div class="card stacked">
 					<a href="<?= $work->url() ?>" class="">
-						<img src="<?= $work->image()->url() ?>" alt="" class="	card__img">
+						<img src="<?= $work->image()->url() ?>" alt="" class="card__img" />
 						<div class="card__content">
 							<h2 class="card__title">
 							<?= $work->title() ?>
