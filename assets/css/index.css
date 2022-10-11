@@ -21,9 +21,9 @@ html {
     --black: black;
     --white: #fff7e0;
     /* --white: white; */
-    --gray: #999999;
-    --primary-color: #ffb0e3;
-    --secondary-color: var(--black);
+    --gray: #6b6b6b;
+    --primary-color: #121212;
+    --secondary-color: #ffb0e3;
 
     --header-font-size: 1.75rem;
     --font-size: 2rem;
@@ -38,7 +38,7 @@ html {
 
 ::selection {
     background: var(--primary-color);
-    color: black;
+    color: var(--secondary-color);
   }
 
 /* Body Stylings */
@@ -114,9 +114,9 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
+.about a:hover, .text a:hover {
     background: var(--primary-color);
-    color: black;
+    color: var(--secondary-color);
     width: -moz-fit-content;
     width: fit-content;
 }

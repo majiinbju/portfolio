@@ -4,9 +4,15 @@
     grid-template-columns: repeat(12, [col-start] 1fr);
     text-transform: capitalize;
     margin-bottom: calc(var(--std-margin));
-    /* mix-blend-mode: difference; */
+    /* mix-blend-mode: color-dodge; */
 }
 
+.header a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    width: -moz-fit-content;
+    width: fit-content;
+}
 
 .sticky {
     top: var(--std-margin);

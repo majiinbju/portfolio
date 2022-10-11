@@ -23,7 +23,7 @@
 
 .project__grid a:hover h2 {
     background-color: var(--primary-color);
-    color: black;
+    color: var(--secondary-color);
     width: -moz-fit-content;
     width: fit-content;
 }
