@@ -15,17 +15,9 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
-.project__grid a:hover {
-    background: none;
-    color: var(--primary-color);
-}
-
-
 .project__grid a:hover h2 {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    width: -moz-fit-content;
-    width: fit-content;
+    color: white;
+    transition: all 0.25s ease-in-out;
 }
 
 

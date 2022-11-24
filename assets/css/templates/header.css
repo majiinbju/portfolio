@@ -5,13 +5,19 @@
     text-transform: capitalize;
     margin-bottom: calc(var(--std-margin));
     /* mix-blend-mode: color-dodge; */
+    transition: all 1ms ease-in-out;
+}
+
+.header a {
+    color: var(--primary-color);
+    transition: all 0.25s ease-in-out;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .header a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    width: -moz-fit-content;
-    width: fit-content;
+    color: white;
+    transition: all 0.25s ease-in-out;
 }
 
 .sticky {

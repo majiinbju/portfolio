@@ -22,8 +22,8 @@ html {
     --white: #fff7e0;
     /* --white: white; */
     --gray: #6b6b6b;
-    --primary-color: #121212;
-    --secondary-color: #ffb0e3;
+    --primary-color: #ffb0e3;
+    --secondary-color: black;
 
     --header-font-size: 1.75rem;
     --font-size: 2rem;
@@ -59,6 +59,7 @@ body {
 
 img {
     max-width: 100%;
+    border-radius: 15px;
 }
 
 ul {
@@ -72,6 +73,7 @@ a {
     padding: 0rem;
     color: currentColor;
     text-decoration: none;
+    transition: all 0.25ms ease-in-out;
 }
 
 /* Cursor Stylings */
@@ -115,10 +117,10 @@ a {
 }
 
 .about a:hover, .text a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    color: white;
     width: -moz-fit-content;
     width: fit-content;
+    transition: all 0.25s ease-in-out;
 }
 
 /* Pagination Navbar Stylings */
@@ -127,6 +129,7 @@ a {
     display: grid;
     font-size: 1.75rem;
     grid-column: 1 / -1;
+    grid-row: 8 / 9;
     justify-content: space-between;
 }
 
@@ -202,7 +205,7 @@ a {
 
 
 /* Mobile Breakpoint Query */
-@media (max-width: 40rem) {
+@media (max-width: 63rem) {
     body {
         cursor: none;
         font-size: 1.25rem;
@@ -221,9 +224,13 @@ a {
 
     .nav {
         display: grid;
-        margin-top: 0.5rem;
-        grid-column: 1 / -1;
-        grid-row: 2 / 3;
+        margin-top: 0rem;
+        grid-column: 6 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .logo {
+        font-size: 1.25rem;
     }
 
     .pagination {

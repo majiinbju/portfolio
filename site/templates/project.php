@@ -31,7 +31,7 @@
                     <img src="<?= $image->resize(1440)->url() ?>" class="project-img lozad">
                 </a>
                 <?php endif ?>
-                <!-- <h2 class="project-header">01 - What</h2> -->
+                <h2 class="project-header">01 - What</h2>
                 <p class="project-description"><?= $page->what() ?></p>
             </section>
         <?php endif ?>
@@ -44,7 +44,7 @@
                 <img src="<?= $image->resize(1440)->url() ?>" class="project-img lozad">
             </a>
             <?php endif ?>
-            <!-- <h2 class="project-header">02 - Why</h2> -->
+            <h2 class="project-header">02 - Why</h2>
             <p class="project-description"><?= $page->why() ?></p>
         </section>
         <?php endif ?>
@@ -58,14 +58,13 @@
                     >
                 </a>
             <?php endif ?>
-            <!-- <h2 class="project-header">03 - Process</h2> -->
+            <h2 class="project-header">03 - Process</h2>
             <p class="project-description"><?= $page->how() ?></p>
         </section>
         <?php endif ?>
         
 
 
-        <div class="project-gallery">
             <?php foreach($page->images()->offset(6) as $image): ?>
                 <li class="project-gallery">
                     <a class="project-img lozad">
@@ -74,7 +73,6 @@
                     </a>
                 </li>
             <?php endforeach ?>
-        </div>
 
     <?php snippet('pagination') ?>
 
