@@ -281,10 +281,10 @@ class Html extends Xml
 	 */
 	public static function gist(string $url, string|null $file = null, array $attr = []): string
 	{
-		if ($file === null) {
-			$src = $url . '.js';
-		} else {
-			$src = $url . '.js?file=' . $file;
+		$src = $url . '.js';
+
+		if ($file !== null) {
+			$src .= '?file=' . $file;
 		}
 
 		return static::tag('script', '', array_merge($attr, ['src' => $src]));
@@ -602,14 +602,19 @@ class Html extends Xml
 
 			default:
 				// short URLs
-				if (Str::contains($uri->host(), 'youtu.be') === true && $isYoutubeId($first) === true) {
+				if (
+					Str::contains($uri->host(), 'youtu.be') === true &&
+					$isYoutubeId($first) === true
+				) {
 					$src = 'https://www.youtube.com/embed/' . $first;
 
 					$query->start = $query->t;
 					unset($query->t);
-
-				// embedded video URLs
-				} elseif ($first === 'embed' && $isYoutubeId($second) === true) {
+				} elseif (
+					in_array($first, ['embed', 'shorts']) === true &&
+					$isYoutubeId($second) === true
+				) {
+					// embedded and shorts video URLs
 					$src = $host . '/' . $second;
 				}
 		}

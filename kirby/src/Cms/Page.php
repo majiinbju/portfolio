@@ -777,11 +777,7 @@ class Page extends ModelWithContent
 
 		$template = $this->intendedTemplate()->name();
 
-		if (isset($readable[$template]) === true) {
-			return $readable[$template];
-		}
-
-		return $readable[$template] = $this->permissions()->can('read');
+		return $readable[$template] ??= $this->permissions()->can('read');
 	}
 
 	/**
@@ -964,9 +960,9 @@ class Page extends ModelWithContent
 	 * Return the permanent URL to the page using its UUID
 	 * @since 3.8.0
 	 */
-	public function permalink(): string
+	public function permalink(): string|null
 	{
-		return $this->uuid()->url();
+		return $this->uuid()?->url();
 	}
 
 	/**

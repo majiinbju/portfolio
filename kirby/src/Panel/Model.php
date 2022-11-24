@@ -159,9 +159,7 @@ abstract class Model
 			}
 		}
 
-		if (isset($settings['query']) === true) {
-			unset($settings['query']);
-		}
+		unset($settings['query']);
 
 		// resolve remaining options defined as query
 		return A::map($settings, function ($option) {
@@ -286,7 +284,7 @@ abstract class Model
 			'link'     => $this->url(true),
 			'sortable' => true,
 			'text'     => $this->model->toSafeString($params['text'] ?? false),
-			'uuid'     => $this->model->uuid()->toString(),
+			'uuid'     => $this->model->uuid()?->toString() ?? $this->model->id(),
 		];
 	}
 

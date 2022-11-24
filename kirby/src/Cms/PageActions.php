@@ -14,6 +14,7 @@ use Kirby\Toolkit\A;
 use Kirby\Toolkit\I18n;
 use Kirby\Toolkit\Str;
 use Kirby\Uuid\Uuid;
+use Kirby\Uuid\Uuids;
 
 /**
  * PageActions
@@ -26,6 +27,55 @@ use Kirby\Uuid\Uuid;
  */
 trait PageActions
 {
+	/**
+	 * Adapts necessary modifications which page uuid, page slug and files uuid
+	 * of copy objects for single or multilang environments
+	 */
+	protected function adaptCopy(Page $copy, bool $files = false): Page
+	{
+		if ($this->kirby()->multilang() === true) {
+			foreach ($this->kirby()->languages() as $language) {
+				// overwrite with new UUID for the page and files
+				// for default language (remove old, add new)
+				if (
+					Uuids::enabled() === true &&
+					$language->isDefault() === true
+				) {
+					$copy = $copy->save(['uuid' => Uuid::generate()], $language->code());
+
+					if ($files !== false) {
+						foreach ($copy->files() as $file) {
+							$file->save(['uuid' => Uuid::generate()], $language->code());
+						}
+					}
+				}
+
+				// remove all translated slugs
+				if (
+					$language->isDefault() === false &&
+					$copy->translation($language)->exists() === true
+				) {
+					$copy = $copy->save(['slug' => null], $language->code());
+				}
+			}
+
+			return $copy;
+		}
+
+		// overwrite with new UUID for the page and files (remove old, add new)
+		if (Uuids::enabled() === true) {
+			$copy = $copy->save(['uuid' => Uuid::generate()]);
+
+			if ($files !== false) {
+				foreach ($copy->files() as $file) {
+					$file->save(['uuid' => Uuid::generate()]);
+				}
+			}
+		}
+
+		return $copy;
+	}
+
 	/**
 	 * Changes the sorting number.
 	 * The sorting number must already be correct
@@ -108,7 +158,7 @@ trait PageActions
 			]);
 
 			// clear UUID cache recursively (for children and files as well)
-			$oldPage->uuid()->clear(true);
+			$oldPage->uuid()?->clear(true);
 
 			if ($oldPage->exists() === true) {
 				// remove the lock of the old page
@@ -433,17 +483,8 @@ trait PageActions
 
 		$copy = $parentModel->clone()->findPageOrDraft($slug);
 
-		// remove all translated slugs
-		if ($this->kirby()->multilang() === true) {
-			foreach ($this->kirby()->languages() as $language) {
-				if ($language->isDefault() === false && $copy->translation($language)->exists() === true) {
-					$copy = $copy->save(['slug' => null], $language->code());
-				}
-			}
-		}
-
-		// overwrite with new UUID (remove old, add new)
-		$copy = $copy->save(['uuid' => Uuid::generate()]);
+		// normalize copy object
+		$copy = $this->adaptCopy($copy, $files);
 
 		// add copy to siblings
 		static::updateParentCollections($copy, 'append', $parentModel);
@@ -467,7 +508,10 @@ trait PageActions
 		// make sure that a UUID gets generated and
 		// added to content right away
 		$props['content'] ??= [];
-		$props['content']['uuid'] ??= Uuid::generate();
+
+		if (Uuids::enabled() === true) {
+			$props['content']['uuid'] ??= Uuid::generate();
+		}
 
 		// create a temporary page object
 		$page = Page::factory($props);
@@ -596,7 +640,7 @@ trait PageActions
 	{
 		return $this->commit('delete', ['page' => $this, 'force' => $force], function ($page, $force) {
 			// clear UUID cache
-			$page->uuid()->clear();
+			$page->uuid()?->clear();
 
 			// delete all files individually
 			foreach ($page->files() as $file) {
@@ -770,9 +814,9 @@ trait PageActions
 		foreach ($sorted as $key => $id) {
 			if ($id === $this->id()) {
 				continue;
-			} elseif ($sibling = $siblings->get($id)) {
-				$sibling->changeNum($key + 1);
 			}
+
+			$siblings->get($id)?->changeNum($key + 1);
 		}
 
 		$parent = $this->parentModel();

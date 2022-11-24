@@ -115,7 +115,7 @@ class Content
 			$oldField = $oldFields->get($name);
 
 			// field name and type matches with old template
-			if ($oldField && $oldField->type() === $newField->type()) {
+			if ($oldField?->type() === $newField->type()) {
 				$data[$name] = $content->get($name)->value();
 			} else {
 				$data[$name] = $newField->default();
@@ -164,13 +164,11 @@ class Content
 
 		$key = strtolower($key);
 
-		if (isset($this->fields[$key])) {
-			return $this->fields[$key];
-		}
-
-		$value = $this->data()[$key] ?? null;
-
-		return $this->fields[$key] = new Field($this->parent, $key, $value);
+		return $this->fields[$key] ??= new Field(
+			$this->parent,
+			$key,
+			$this->data()[$key] ?? null
+		);
 	}
 
 	/**

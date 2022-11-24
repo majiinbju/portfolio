@@ -29,15 +29,16 @@ return [
 		'siblings'    => function (Page $page) {
 			if ($page->isDraft() === true) {
 				return $page->parentModel()->children()->not($page);
-			} else {
-				return $page->siblings();
 			}
+
+			return $page->siblings();
 		},
 		'slug'     => fn (Page $page) => $page->slug(),
 		'status'   => fn (Page $page) => $page->status(),
 		'template' => fn (Page $page) => $page->intendedTemplate()->name(),
 		'title'    => fn (Page $page) => $page->title()->value(),
 		'url'      => fn (Page $page) => $page->url(),
+		'uuid'     => fn (Page $page) => $page->uuid()?->toString()
 	],
 	'type' => 'Kirby\Cms\Page',
 	'views' => [
@@ -45,7 +46,8 @@ return [
 			'id',
 			'title',
 			'url',
-			'num'
+			'num',
+			'uuid'
 		],
 		'default' => [
 			'content',
@@ -57,7 +59,8 @@ return [
 			'slug',
 			'template',
 			'title',
-			'url'
+			'url',
+			'uuid'
 		],
 		'panel' => [
 			'id',
@@ -71,7 +74,8 @@ return [
 			'previewUrl',
 			'slug',
 			'title',
-			'url'
+			'url',
+			'uuid'
 		],
 		'selector' => [
 			'id',
