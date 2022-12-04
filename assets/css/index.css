@@ -17,23 +17,14 @@ html {
 
 :root {
     --std-margin: 3rem;
-    /* --black: #121212; */
-    --black: black;
-    --white: #fff7e0;
-    /* --white: white; */
-    --gray: #6b6b6b;
     --primary-color: #ffb0e3;
     --secondary-color: black;
-
-    --header-font-size: 1.75rem;
-    --font-size: 2rem;
+    --font: normal var(--font-size)/1.1 Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
     --font-color: var(--primary-color);
-    --primary-font: Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
-    /* --primary-font: 'Space Grotesk', sans-serif;; */
-    --secondary-font: -apple-system;
-
+    --font-size: 2.52rem;
+    --header-font-size: 4.72456rem;
+    --title-font-size: 5.5rem;
     --border: 2px solid var(--secondary-color);
-    --border-radius: 20px;
 }
 
 ::selection {
@@ -49,17 +40,15 @@ body {
     padding: 0rem;
     background-color: var(--secondary-color);
     margin: var(--std-margin);
-    font-size: var(--font-size);
+    font: var(--font);
     color: var(--font-color);
-    font-family: var(--primary-font);
     line-height: 1.2;
     min-height: 100%;
-    cursor: default;
 }
 
 img {
     max-width: 100%;
-    border-radius: 15px;
+    border: 2px solid var(--primary-color);
 }
 
 ul {
@@ -73,24 +62,7 @@ a {
     padding: 0rem;
     color: currentColor;
     text-decoration: none;
-    transition: all 0.25ms ease-in-out;
-}
-
-/* Cursor Stylings */
-.cursor {
-  position: fixed;
-  border-radius: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  pointer-events: none;
-  left: -100px;
-  top: 50%;
-  mix-blend-mode: difference;
-  background-color: white;
-  z-index: 10000;
-  border: 2px solid white;
-  height: 30px;
-  width: 30px;
-  transition: all 200ms ease-out;
+    transition: all 0.25s ease-in-out;
 }
 
 /* About Stylings */
@@ -179,7 +151,7 @@ a {
     bottom: 0;
     width: 100%;
     height: 100%;
-    scale: 0.75;
+    scale: 0.80;
     display: none;
 }
 

@@ -1,12 +1,12 @@
 /* Project Page Stylings */
 
 :root {
-	--column-width: 3 / -3;
+	--column-width: 1 / -1;
 }
 
 .project-title {
-	font-size: var(--font-size);
-	font-weight: normal;
+	font: var(--font);
+	font-size: var(--title-font-size);
 	justify-self: start;
 	grid-column: var(--column-width);
 	grid-row: 2 / 3;
@@ -22,29 +22,24 @@
 }
 
 .project-tag {
+	font: var(--font);
 	color: var(--gray);
-	font-size: var(--font-size);
-	font-weight: normal;
 	grid-column: var(--column-width);
 	grid-row: 2 / 3;
 	justify-self: end;
-	text-align: right;
 	transition: all 0.5s ease-in-out;
 }
 
 .project-gallery {
-	display: grid;
-	/* margin: calc(var(--std-margin) / 2) 0rem; */
+	grid-column: var(--column-width);
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-row: 7 / 8;
-	grid-column: var(--column-width);
 }
 
 .project-gallery img {
 	display: flex;
-	/* margin-bottom: var(--std-margin); */
 	align-self: center;
 }
 
@@ -58,7 +53,7 @@
 }
 
 .project-header {
-	font-size: var(--font-size);
+	font-size: var(--header-font-size);
 	font-weight: normal;
 	/* text-decoration: underline; */
 	grid-row: 2 / 3;
@@ -69,11 +64,9 @@
 
 .project-description {
 	font-size: var(--font-size);
-	text-align: right;
 	justify-self: end;
 	grid-row: 2 / 3;
-	grid-column: 6 / -3;
-	/* text-align: right; */
+	grid-column: 6 / -1;
 }
 
 .section {
@@ -104,10 +97,11 @@
 
 .project-img img {
 	margin-bottom: calc(var(--std-margin) / 2);
-	/* border: 2px solid var(--primary-color); */
+	transition: all 0.25s ease-in-out;
 }
 
-.project-img:hover {
+.project-img img:hover {
+	cursor: pointer;
 	transform: scale(0.99);
 }
 
@@ -115,7 +109,7 @@ section .project-img {
 	margin-bottom: calc(var(--std-margin) / 2);
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 50rem) {
 	body {
 		font-size: calc(var(--font-size) / 2);
 	}
@@ -132,14 +126,14 @@ section .project-img {
 	}
 
 	.project-title {
-		font-size: 1.25rem;
+		font-size: 1.75rem;
 		font-weight: normal;
 		grid-column: 1 / -1;
 		grid-row: 2 / 3;
 	}
 
 	.project-tag {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		grid-row: 3 / 4;
 		text-align: left;
 		justify-self: start;
@@ -147,19 +141,22 @@ section .project-img {
 		margin-bottom: 1rem;
 	}
 
+	.project-tag dd {
+		margin-bottom: 0.15rem;
+	}
+
 	.project-header {
-		font-size: 1.25rem;
+		font-size: 1.75rem;
 		grid-row: 2 / 3;
 		grid-column: 1 / -1;
 		margin-bottom: 0.5rem;
 	}
 
 	.project-description {
-		font-size: 1rem;
+		font-size: 1.25rem;
 		grid-column: 1 / -1;
 		grid-row: 3 / 4;
 		justify-self: start;
-		text-align: left;
 		margin-bottom: calc(var(--std-margin) / 3);
 	}
 
@@ -173,7 +170,7 @@ section .project-img {
 	.project-img {
 		grid-column: 1 / -1;
 		grid-row: 1 / 2;
-		margin-bottom: 0.5rem;
+		margin-bottom: 0rem;
 	}
 
 	.what {

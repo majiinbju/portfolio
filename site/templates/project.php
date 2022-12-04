@@ -20,7 +20,6 @@
 
         <a class="project-img">
             <img src="<?= $page->image('01_cover.jpg')->resize(1440)->url() ?>" class="project-img cover lozad">
-            
         </a>
 
 
@@ -31,7 +30,7 @@
                     <img src="<?= $image->resize(1440)->url() ?>" class="project-img lozad">
                 </a>
                 <?php endif ?>
-                <h2 class="project-header">01 - What</h2>
+                <h2 class="project-header">What</h2>
                 <p class="project-description"><?= $page->what() ?></p>
             </section>
         <?php endif ?>
@@ -44,7 +43,7 @@
                 <img src="<?= $image->resize(1440)->url() ?>" class="project-img lozad">
             </a>
             <?php endif ?>
-            <h2 class="project-header">02 - Why</h2>
+            <h2 class="project-header">Why</h2>
             <p class="project-description"><?= $page->why() ?></p>
         </section>
         <?php endif ?>
@@ -58,21 +57,22 @@
                     >
                 </a>
             <?php endif ?>
-            <h2 class="project-header">03 - Process</h2>
+            <h2 class="project-header">Process</h2>
             <p class="project-description"><?= $page->how() ?></p>
         </section>
         <?php endif ?>
         
 
-
+            <ul class="project-gallery">
             <?php foreach($page->images()->offset(6) as $image): ?>
-                <li class="project-gallery">
+                <li>
                     <a class="project-img lozad">
                         <img src="<?= $image->resize(1440)->url() ?>" class=""
                         >
                     </a>
                 </li>
             <?php endforeach ?>
+            </ul>
 
     <?php snippet('pagination') ?>
 
