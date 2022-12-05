@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src https:">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,6 @@
     <title><?= $site->tab() ?></title>
     <meta name="description" content="<?= $site->description() ?>">
     <meta name=”robots” content="index, follow">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
     <!-- Linking a css file with "css()" function -->
     <?= css('/assets/css/reset.css') ?>

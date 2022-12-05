@@ -1,0 +1,75 @@
+{
+  "name": "bnomei/kirby3-security-headers",
+  "type": "kirby-plugin",
+  "version": "2.5.4",
+  "license": "MIT",
+  "description": "Kirby 3 Plugin for easier Security Headers setup",
+  "authors": [
+    {
+      "name": "Bruno Meilick",
+      "email": "b@bnomei.com"
+    }
+  ],
+  "keywords": [
+    "kirby3",
+    "kirby3-cms",
+    "kirby3-plugin",
+    "content-security-policy",
+    "security-headers",
+    "csp",
+    "nonce",
+    "nonces",
+    "hash",
+    "apache",
+    "nginx",
+    "json",
+    "yaml"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bnomei\\": "classes/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "require": {
+    "php": ">=7.4.0",
+    "getkirby/composer-installer": "^1.2",
+    "paragonie/csp-builder": "^2.5"
+  },
+  "require-dev": {
+    "getkirby/cms": "^3.5",
+    "php-coveralls/php-coveralls": "^2.1",
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "analyze": "phpstan analyse classes",
+    "fix": "php-cs-fixer fix",
+    "test": [
+      "mkdir -p tests/logs",
+      "@putenv XDEBUG_MODE=coverage",
+      "phpunit --configuration ./phpunit.xml"
+    ],
+    "dist": [
+      "composer install --no-dev --optimize-autoloader",
+      "git rm -rf --cached .; git add .;"
+    ],
+    "kirby": [
+      "composer install",
+      "composer update",
+      "composer install --working-dir=tests/kirby --no-dev --optimize-autoloader",
+      "composer update --working-dir=tests/kirby"
+    ]
+  },
+  "extra": {
+    "kirby-cms-path": "tests/kirby"
+  },
+  "suggest": {
+    "bnomei/kirby3-doctor": "Add a panel button to check health and security of your Kirby installation"
+  }
+}

@@ -21,7 +21,7 @@ html {
     --secondary-color: black;
     --font: normal var(--font-size)/1.1 Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
     --font-color: var(--primary-color);
-    --font-size: 2.52rem;
+    --font-size: 2rem;
     --header-font-size: 4.72456rem;
     --title-font-size: 5.5rem;
     --border: 2px solid var(--secondary-color);

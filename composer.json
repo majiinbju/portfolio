@@ -23,7 +23,9 @@
   },
   "require": {
     "php": ">=7.4.0 <8.2.0",
-    "getkirby/cms": "^3.6"
+    "getkirby/cms": "^3.6",
+    "bnomei/kirby3-security-headers": "^2.5",
+    "bnomei/kirby3-fingerprint": "^3.2"
   },
   "config": {
     "allow-plugins": {

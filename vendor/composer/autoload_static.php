@@ -28,6 +28,9 @@ class ComposerStaticInit4fcf068dde6ea270384edae659728580
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
+            'ParagonIE\\ConstantTime\\' => 23,
+            'ParagonIE\\CSPBuilder\\' => 21,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
         'L' => 
@@ -41,6 +44,10 @@ class ComposerStaticInit4fcf068dde6ea270384edae659728580
         'C' => 
         array (
             'Composer\\Semver\\' => 16,
+        ),
+        'B' => 
+        array (
+            'Bnomei\\' => 7,
         ),
     );
 
@@ -65,6 +72,18 @@ class ComposerStaticInit4fcf068dde6ea270384edae659728580
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'ParagonIE\\ConstantTime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
+        ),
+        'ParagonIE\\CSPBuilder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/csp-builder/src',
+        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
@@ -75,12 +94,17 @@ class ComposerStaticInit4fcf068dde6ea270384edae659728580
         ),
         'Kirby\\' => 
         array (
-            0 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
-            1 => __DIR__ . '/../..' . '/kirby/src',
+            0 => __DIR__ . '/../..' . '/kirby/src',
+            1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
         ),
         'Composer\\Semver\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
+        ),
+        'Bnomei\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/site/plugins/kirby3-security-headers/classes',
+            1 => __DIR__ . '/../..' . '/site/plugins/kirby3-fingerprint/classes',
         ),
     );
 
@@ -106,6 +130,9 @@ class ComposerStaticInit4fcf068dde6ea270384edae659728580
     );
 
     public static $classMap = array (
+        'Bnomei\\Fingerprint' => __DIR__ . '/../..' . '/site/plugins/kirby3-fingerprint/classes/Fingerprint.php',
+        'Bnomei\\FingerprintFile' => __DIR__ . '/../..' . '/site/plugins/kirby3-fingerprint/classes/FingerprintFile.php',
+        'Bnomei\\SecurityHeaders' => __DIR__ . '/../..' . '/site/plugins/kirby3-security-headers/classes/SecurityHeaders.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Composer\\Semver\\Comparator' => __DIR__ . '/..' . '/composer/semver/src/Comparator.php',
         'Composer\\Semver\\CompilingMatcher' => __DIR__ . '/..' . '/composer/semver/src/CompilingMatcher.php',
@@ -426,8 +453,27 @@ class ComposerStaticInit4fcf068dde6ea270384edae659728580
         'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/PHPMailer.php',
         'PHPMailer\\PHPMailer\\POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/POP3.php',
         'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/SMTP.php',
+        'ParagonIE\\CSPBuilder\\CSPBuilder' => __DIR__ . '/..' . '/paragonie/csp-builder/src/CSPBuilder.php',
+        'ParagonIE\\ConstantTime\\Base32' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base32.php',
+        'ParagonIE\\ConstantTime\\Base32Hex' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base32Hex.php',
+        'ParagonIE\\ConstantTime\\Base64' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base64.php',
+        'ParagonIE\\ConstantTime\\Base64DotSlash' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base64DotSlash.php',
+        'ParagonIE\\ConstantTime\\Base64DotSlashOrdered' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base64DotSlashOrdered.php',
+        'ParagonIE\\ConstantTime\\Base64UrlSafe' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base64UrlSafe.php',
+        'ParagonIE\\ConstantTime\\Binary' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Binary.php',
+        'ParagonIE\\ConstantTime\\EncoderInterface' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/EncoderInterface.php',
+        'ParagonIE\\ConstantTime\\Encoding' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Encoding.php',
+        'ParagonIE\\ConstantTime\\Hex' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Hex.php',
+        'ParagonIE\\ConstantTime\\RFC4648' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/RFC4648.php',
         'Parsedown' => __DIR__ . '/../..' . '/kirby/dependencies/parsedown/Parsedown.php',
         'ParsedownExtra' => __DIR__ . '/../..' . '/kirby/dependencies/parsedown-extra/ParsedownExtra.php',
+        'Psr\\Http\\Message\\MessageInterface' => __DIR__ . '/..' . '/psr/http-message/src/MessageInterface.php',
+        'Psr\\Http\\Message\\RequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/RequestInterface.php',
+        'Psr\\Http\\Message\\ResponseInterface' => __DIR__ . '/..' . '/psr/http-message/src/ResponseInterface.php',
+        'Psr\\Http\\Message\\ServerRequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/ServerRequestInterface.php',
+        'Psr\\Http\\Message\\StreamInterface' => __DIR__ . '/..' . '/psr/http-message/src/StreamInterface.php',
+        'Psr\\Http\\Message\\UploadedFileInterface' => __DIR__ . '/..' . '/psr/http-message/src/UploadedFileInterface.php',
+        'Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
         'Psr\\Log\\AbstractLogger' => __DIR__ . '/..' . '/psr/log/src/AbstractLogger.php',
         'Psr\\Log\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/log/src/InvalidArgumentException.php',
         'Psr\\Log\\LogLevel' => __DIR__ . '/..' . '/psr/log/src/LogLevel.php',
