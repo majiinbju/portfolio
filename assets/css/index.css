@@ -197,7 +197,7 @@ a {
     .nav {
         display: grid;
         margin-top: 0rem;
-        grid-column: 6 / -1;
+        grid-column: 5 / -1;
         grid-row: 1 / 2;
     }
 

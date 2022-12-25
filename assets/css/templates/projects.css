@@ -15,11 +15,13 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
-.project__grid a:hover h2 {
-    color: white;
+.project__grid a h2 {
     transition: all 0.25s ease-in-out;
 }
 
+.project__grid a:hover h2 {
+    color: white;
+}
 
 .card {
     /* grid-row: span 2; */
@@ -48,12 +50,17 @@
     aspect-ratio: 16 / 10;
     object-fit: cover;
     margin-bottom: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.card__img:hover {
+    box-shadow: 0px 1px 2px 2px pink;
 }
 
 /* Project Grid Breakpoints */
 @media (min-width: 40rem) {
     .project__grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
     }
 

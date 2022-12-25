@@ -22,5 +22,3 @@
 
  
   <body>
-
-    <div class='cursor' id="cursor"></div>
