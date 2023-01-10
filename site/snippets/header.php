@@ -11,13 +11,13 @@
           <?php foreach ($site->children()->listed() as $item): ?>
 
             <li>
-              <a href="<?= $item->url() ?>">
+              <a href="<?= $item->url() ?>" class="nav-item">
                 <?= $item->title() ?>
               </a>
             </li>
           <?php endforeach ?>
           <li class="gray">
-              &copy; 2022
+              &copy; 2023
           </li>
         </ul>
 

@@ -1,0 +1,29 @@
+Title: Anonymous DAT Chat
+
+----
+
+Category: Web Application
+
+----
+
+Year: 2019
+
+----
+
+Link: https://github.com/majiinbju/dat-chat
+
+----
+
+What: The Anonymous DAT Chat aims to build a community where anonymity is secured. Think of it as a messenger from back in the day, such as MSN or AOL. It gives one the ability to customize their name, upload an avatar and essentially create an anonymous persona whilst still being able to chat with other users on the network.  It functions on the Beaker Browser, making use of the DAT API.
+
+----
+
+Why: This chat feature is meant to implemented in a peer-to-peer networking environment and will not function without one. As part of the class's social network, this feature was made to enable students to chat with each other, without knowing who is who (unless made obvious).
+
+----
+
+How: The social network comprised posts from various students of the class. Ranging from random observations, to questions and answers. Thus was born the idea of the Anonymous Chat. With the use of the DAT API, this application gives a glimpse into the possible future where consumers are able to take back their privacy and data from megacorps.
+
+----
+
+Tags: 

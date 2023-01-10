@@ -16,7 +16,7 @@
 }
 
 .header a:hover {
-    color: white;
+    color: var(--highlight);
     transition: all 0.25s ease-in-out;
 }
 

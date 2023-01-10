@@ -18,6 +18,6 @@ return array(
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
     'Kirby\\' => array($baseDir . '/kirby/src', $vendorDir . '/getkirby/composer-installer/src'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
-    'Bnomei\\' => array($baseDir . '/site/plugins/kirby3-security-headers/classes', $baseDir . '/site/plugins/kirby3-fingerprint/classes'),
+    'Bnomei\\' => array($baseDir . '/site/plugins/kirby3-fingerprint/classes', $baseDir . '/site/plugins/kirby3-security-headers/classes'),
     '' => array($vendorDir . '/league/color-extractor/src'),
 );

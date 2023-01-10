@@ -1,4 +1,4 @@
-
+// Lightbox
 const lightbox = document.createElement('div')
 const main = document.querySelector('main')
 const shadow = document.createElement('div');

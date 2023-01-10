@@ -1,22 +1,13 @@
-
-
 <footer class="footer">
-      <!-- <nav class="links">
-            <ul class="link-list">
-              <li><a href="<?=$site->github() ?>" target="_blank">Github</a></li>
-              <li><a href="<?=$site->linkedin() ?>" target="_blank">LinkedIn</a></li>
-              <li><a href="mailto:<?=$site->email() ?>" target="_blank">Get in  touch</a></li>
-            </ul>
-      </nav> -->
-
 </footer>
-<?= js('/assets/js/cursor.js') ?>
+<!-- Minimizing image sizes -->
 <?= js('/assets/js/lozad.min.js') ?>
+<!-- Content fade in animation -->
+<?= js('/assets/js/fade.js') ?>
 <script>
       const observer = lozad();
       observer.observe();
 </script>
 </body>
-
 
 </html>

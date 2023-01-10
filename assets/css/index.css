@@ -3,7 +3,6 @@
 ******************************************************************************/
 
 /* Root Value Stylings */
-
 *,
 *::before,
 *::after {
@@ -15,27 +14,28 @@ html {
     transition: all 0.25s ease-in-out;
 }
 
+/* Variables */
 :root {
     --std-margin: 3rem;
-    --primary-color: #ffb0e3;
+    --primary-color: white;
     --secondary-color: black;
+    --highlight: gray;
     --font: normal var(--font-size)/1.1 Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
     --font-color: var(--primary-color);
     --font-size: 2rem;
     --header-font-size: 4.72456rem;
     --title-font-size: 5.5rem;
-    --border: 2px solid var(--secondary-color);
+    --border: 2px solid var(--highlight);
+    --active-border: 2px solid var(--primary-color);
 }
 
+/* Text Select animation */
 ::selection {
     background: var(--primary-color);
     color: var(--secondary-color);
   }
 
 /* Body Stylings */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'); */
-
 body {
     padding: 0rem;
     background-color: var(--secondary-color);
@@ -48,7 +48,7 @@ body {
 
 img {
     max-width: 100%;
-    border: 2px solid var(--primary-color);
+    /* border: var(--border); */
 }
 
 ul {
@@ -89,14 +89,15 @@ a {
 }
 
 .about a:hover, .text a:hover {
-    color: white;
+    color: var(--highlight);
     width: -moz-fit-content;
     width: fit-content;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Pagination Navbar Stylings */
 .pagination {
+    margin-top: var(--std-margin);
     grid-template-columns: 2fr;
     display: grid;
     font-size: 1.75rem;
@@ -111,7 +112,7 @@ a {
 }
 
 .pagination > a:hover {
-    color: var(--white);
+    color: var(--highlight);
 }
 
 .previous-page {
@@ -125,12 +126,11 @@ a {
 }
 
 /* Main Stylings */
-
 .main-grid {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
     margin: 0rem;
-    gap: var(--std-margin);
+    gap: 1rem;
 }
 
 .container {
@@ -153,7 +153,7 @@ a {
     height: 100%;
     scale: 0.80;
     display: none;
-}
+} 
 
 #shadow {
     display: none;

@@ -257,6 +257,7 @@ return array(
     'Kirby\\Parsley\\Schema\\Plain' => $baseDir . '/kirby/src/Parsley/Schema/Plain.php',
     'Kirby\\Query\\Argument' => $baseDir . '/kirby/src/Query/Argument.php',
     'Kirby\\Query\\Arguments' => $baseDir . '/kirby/src/Query/Arguments.php',
+    'Kirby\\Query\\Expression' => $baseDir . '/kirby/src/Query/Expression.php',
     'Kirby\\Query\\Query' => $baseDir . '/kirby/src/Query/Query.php',
     'Kirby\\Query\\Segment' => $baseDir . '/kirby/src/Query/Segment.php',
     'Kirby\\Query\\Segments' => $baseDir . '/kirby/src/Query/Segments.php',

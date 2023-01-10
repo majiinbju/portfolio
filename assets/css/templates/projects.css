@@ -1,79 +1,83 @@
+/* Project Grid */
 .stacked {
-    display: grid;
+  display: grid;
 }
 
 /* selecting direct child inside */
 .stacked > * {
-    grid-column: 1 / -1;
-    grid-row: 1 / 1;
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
 }
 
 .project__grid {
-    display: grid;
-    gap: 3rem;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  display: grid;
+  gap: 3rem;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 .project__grid a h2 {
-    transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .project__grid a:hover h2 {
-    color: white;
+  /* color: var(--highlight); */
+  transition: all 0.25s ease-in-out;
 }
 
+/* Project Card */
 .card {
-    /* grid-row: span 2; */
-    /* grid-column: span 2; */
-    aspect-ratio: 16 / 10;
-    /* border: var(--border); */
+  /* grid-row: span 2; */
+  /* grid-column: span 2; */
+  aspect-ratio: 16 / 10;
+  /* border: var(--border); */
 }
 
 .card__content {
-    /* background-color: var(--black); */
-    /* color: var(--black); */
-    z-index: 2;
-    /* use align self end to make sure it doesn't stretch to fill */
-    /* padding: 1rem 0rem; */
-    /* box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1); */
+  /* background-color: var(--black); */
+  /* color: var(--black); */
+  z-index: 2;
+  /* use align self end to make sure it doesn't stretch to fill */
+  /* padding: 1rem 0rem; */
+  /* box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1); */
 }
 
 .card__title {
-    /* text-indent: 4rem; */
-    font-size: var(--font-size);
-    font-weight: normal;
+  /* text-indent: 4rem; */
+  font-size: var(--font-size);
+  font-weight: normal;
 }
 
 .card__img {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
-    margin-bottom: 2rem;
-    transition: all 0.5s ease-in-out;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border: var(--border);
+  transition: all 0.4s ease-in-out;
 }
 
 .card__img:hover {
-    box-shadow: 0px 1px 2px 2px pink;
+  border: var(--active-border);
 }
 
 /* Project Grid Breakpoints */
 @media (min-width: 40rem) {
-    .project__grid {
-        grid-template-columns: 1fr 1fr;
-        /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
-    }
+  .project__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+  }
 
-    .card.featured {
-        grid-row: span 2;
-        grid-column: span 2;
-    }
+  .card.featured {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
 
-    .card.featured .card__img {
-        aspect-ratio: 16 / 10;
-    }
+  .card.featured .card__img {
+    aspect-ratio: 16 / 10;
+  }
 
-    .card.featured .card__title {
-        font-size: 1rem;
-    }
+  .card.featured .card__title {
+    font-size: 1rem;
+  }
 }

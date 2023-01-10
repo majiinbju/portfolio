@@ -1,7 +1,0 @@
-Title: About
-
-----
-
-Text: A 24 year old designer driven by his passion to solve problems. His creative side is informed by a keen interest in different forms of media. As a child, his passion for video games lead to his love for computers. This laid the foundation for his path in becoming a designer. Eager to learn a new technology or skill, he taught himself Photoshop at eight years old. He took on entrepreneurial endeavours as he entered adolescence and began selling his designs to a merchandising website. In 2014 he started his own online shop that sold custom posters. He earned a scholarship and refined his skills at the Parsons School of Design in New York, where he started learning how to code and build interactive narratives. He is currently teaching himself JavaScript in additon to having learnt HTML and CSS. He is looking for opportunities to grow in this sphere.
-
-----

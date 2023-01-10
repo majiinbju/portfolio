@@ -314,17 +314,17 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.14.5",
-            "version_normalized": "2.14.5.0",
+            "version": "2.14.6",
+            "version_normalized": "2.14.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "a63e5e8f26ebbebf8ed3c5c691637325512eb0dc"
+                "reference": "f7948baaa0330277c729714910336383286305da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
-                "reference": "a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/f7948baaa0330277c729714910336383286305da",
+                "reference": "f7948baaa0330277c729714910336383286305da",
                 "shasum": ""
             },
             "require": {
@@ -340,7 +340,7 @@
                 "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
                 "whoops/soap": "Formats errors as SOAP responses"
             },
-            "time": "2022-01-07T12:00:00+00:00",
+            "time": "2022-11-02T16:23:29+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -376,7 +376,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.14.5"
+                "source": "https://github.com/filp/whoops/tree/2.14.6"
             },
             "funding": [
                 {
@@ -388,17 +388,17 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.8.2",
-            "version_normalized": "3.8.2.0",
+            "version": "3.8.3",
+            "version_normalized": "3.8.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "f16b0b41db19ab5dbcf22e27f4aa2c35cb2c490c"
+                "reference": "41719bd54310dfc2e321a75a8549da98ccf5cd1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/f16b0b41db19ab5dbcf22e27f4aa2c35cb2c490c",
-                "reference": "f16b0b41db19ab5dbcf22e27f4aa2c35cb2c490c",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/41719bd54310dfc2e321a75a8549da98ccf5cd1d",
+                "reference": "41719bd54310dfc2e321a75a8549da98ccf5cd1d",
                 "shasum": ""
             },
             "require": {
@@ -415,7 +415,7 @@
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
                 "ext-simplexml": "*",
-                "filp/whoops": "2.14.5",
+                "filp/whoops": "2.14.6",
                 "getkirby/composer-installer": "^1.2.1",
                 "laminas/laminas-escaper": "2.12.0",
                 "michelf/php-smartypants": "1.8.1",
@@ -437,7 +437,7 @@
                 "ext-zip": "Support for ZIP archive file functions",
                 "ext-zlib": "Sanitization and validation for svgz files"
             },
-            "time": "2022-11-15T12:18:18+00:00",
+            "time": "2022-12-06T14:31:06+00:00",
             "type": "kirby-cms",
             "extra": {
                 "unused": [
@@ -794,17 +794,17 @@
         },
         {
             "name": "paragonie/csp-builder",
-            "version": "v2.7.0",
-            "version_normalized": "2.7.0.0",
+            "version": "v2.8.0",
+            "version_normalized": "2.8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/csp-builder.git",
-                "reference": "613c0d251f796c718a0da7ebc9e0e6d94e55de8a"
+                "reference": "1a1a85fcf115400d7753af842403ec6e846319de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/csp-builder/zipball/613c0d251f796c718a0da7ebc9e0e6d94e55de8a",
-                "reference": "613c0d251f796c718a0da7ebc9e0e6d94e55de8a",
+                "url": "https://api.github.com/repos/paragonie/csp-builder/zipball/1a1a85fcf115400d7753af842403ec6e846319de",
+                "reference": "1a1a85fcf115400d7753af842403ec6e846319de",
                 "shasum": ""
             },
             "require": {
@@ -818,7 +818,7 @@
                 "squizlabs/php_codesniffer": "^3",
                 "vimeo/psalm": "^4"
             },
-            "time": "2022-10-01T19:09:15+00:00",
+            "time": "2022-12-15T03:49:58+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {

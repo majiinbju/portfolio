@@ -103,8 +103,8 @@ class ComposerStaticInit4fcf068dde6ea270384edae659728580
         ),
         'Bnomei\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/site/plugins/kirby3-security-headers/classes',
-            1 => __DIR__ . '/../..' . '/site/plugins/kirby3-fingerprint/classes',
+            0 => __DIR__ . '/../..' . '/site/plugins/kirby3-fingerprint/classes',
+            1 => __DIR__ . '/../..' . '/site/plugins/kirby3-security-headers/classes',
         ),
     );
 
@@ -381,6 +381,7 @@ class ComposerStaticInit4fcf068dde6ea270384edae659728580
         'Kirby\\Parsley\\Schema\\Plain' => __DIR__ . '/../..' . '/kirby/src/Parsley/Schema/Plain.php',
         'Kirby\\Query\\Argument' => __DIR__ . '/../..' . '/kirby/src/Query/Argument.php',
         'Kirby\\Query\\Arguments' => __DIR__ . '/../..' . '/kirby/src/Query/Arguments.php',
+        'Kirby\\Query\\Expression' => __DIR__ . '/../..' . '/kirby/src/Query/Expression.php',
         'Kirby\\Query\\Query' => __DIR__ . '/../..' . '/kirby/src/Query/Query.php',
         'Kirby\\Query\\Segment' => __DIR__ . '/../..' . '/kirby/src/Query/Segment.php',
         'Kirby\\Query\\Segments' => __DIR__ . '/../..' . '/kirby/src/Query/Segments.php',
