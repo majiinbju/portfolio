@@ -25,5 +25,3 @@
 
 
 <body id="body" style="opacity:0;">
-
-  <div class='cursor' id="cursor"></div>

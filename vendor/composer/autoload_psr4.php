@@ -16,7 +16,7 @@ return array(
     'ParagonIE\\CSPBuilder\\' => array($vendorDir . '/paragonie/csp-builder/src'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
-    'Kirby\\' => array($baseDir . '/kirby/src', $vendorDir . '/getkirby/composer-installer/src'),
+    'Kirby\\' => array($vendorDir . '/getkirby/composer-installer/src', $baseDir . '/kirby/src'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Bnomei\\' => array($baseDir . '/site/plugins/kirby3-fingerprint/classes', $baseDir . '/site/plugins/kirby3-security-headers/classes'),
     '' => array($vendorDir . '/league/color-extractor/src'),

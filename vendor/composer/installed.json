@@ -388,17 +388,17 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.8.3",
-            "version_normalized": "3.8.3.0",
+            "version": "3.8.4",
+            "version_normalized": "3.8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "41719bd54310dfc2e321a75a8549da98ccf5cd1d"
+                "reference": "d8a3654d2293e0a7c3d0b0672e9657fda9a5c481"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/41719bd54310dfc2e321a75a8549da98ccf5cd1d",
-                "reference": "41719bd54310dfc2e321a75a8549da98ccf5cd1d",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/d8a3654d2293e0a7c3d0b0672e9657fda9a5c481",
+                "reference": "d8a3654d2293e0a7c3d0b0672e9657fda9a5c481",
                 "shasum": ""
             },
             "require": {
@@ -437,7 +437,7 @@
                 "ext-zip": "Support for ZIP archive file functions",
                 "ext-zlib": "Sanitization and validation for svgz files"
             },
-            "time": "2022-12-06T14:31:06+00:00",
+            "time": "2023-01-10T08:50:24+00:00",
             "type": "kirby-cms",
             "extra": {
                 "unused": [
