@@ -1,0 +1,43 @@
+/* Project Grid */
+.project__grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: minmax(3rem, auto);
+  grid-auto-flow: dense;
+}
+
+/* Project Card */
+.card {
+  aspect-ratio: 16 / 10;
+}
+
+.card__content {
+  z-index: 2;
+}
+
+.card__title {
+  /* text-indent: 4rem; */
+  font-size: var(--font-size);
+  font-weight: normal;
+}
+
+.card__img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border: var(--border);
+  transition: all 0.4s ease-in-out;
+}
+
+.card__img:hover {
+  border: var(--active-border);
+}
+
+/* Project Grid Breakpoints */
+@media (min-width: 40rem) {
+  .card {
+    grid-column: span 2;
+  }
+}

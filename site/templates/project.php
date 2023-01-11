@@ -19,19 +19,18 @@
         </dl>
 
         <a class="project-img">
-            <img src="<?= $page->image('01_cover.jpg')->resize(1920)->url() ?>" class="project-img cover lozad">
+            <img src="<?= $page->image('01_cover.jpg')->resize(1920)->url() ?>" class="cover lozad">
         </a>
 
 
         <?php if ($page->what()->isNotEmpty()): ?>
             <section class="section what">
+                <p class="project-description"><?= $page->what() ?></p>
                 <?php if($image = $page->image('02_what.jpg')): ?>
                 <a class="project-img">
-                    <img src="<?= $image->resize(1920)->url() ?>" class="project-img lozad">
+                    <img src="<?= $image->resize(1920)->url() ?>" class="lozad">
                 </a>
                 <?php endif ?>
-                <!-- <h2 class="project-header">What</h2> -->
-                <p class="project-description"><?= $page->what() ?></p>
             </section>
         <?php endif ?>
 
@@ -40,7 +39,7 @@
         <section class="section why">
             <?php if($image = $page->image('03_why.jpg')): ?>
             <a class="project-img">
-                <img src="<?= $image->resize(1920)->url() ?>" class="project-img lozad">
+                <img src="<?= $image->resize(1920)->url() ?>" class="lozad">
             </a>
             <?php endif ?>
             <!-- <h2 class="project-header">Why</h2> -->
@@ -51,11 +50,9 @@
         <?php if ($page->how()->isNotEmpty()): ?>
         <section class="section process">
             <?php if($image = $page->image('04_how.jpg')): ?>
-                <a class="project-img lozad">
-                    <img 
-                    src="<?= $image->resize(1920)->url() ?>"
-                    >
-                </a>
+            <a class="project-img">
+                <img src="<?= $image->resize(1920)->url() ?>" class="lozad">
+            </a>
             <?php endif ?>
             <!-- <h2 class="project-header">Process</h2> -->
             <p class="project-description"><?= $page->how() ?></p>
@@ -66,8 +63,8 @@
             <ul class="project-gallery">
             <?php foreach($page->images()->offset(6) as $image): ?>
                 <li>
-                    <a class="project-img lozad">
-                        <img src="<?= $image->resize(1920)->url() ?>" class=""
+                    <a class="project-img">
+                        <img src="<?= $image->resize(1920)->url() ?>" class="lozad project-img"
                         >
                     </a>
                 </li>

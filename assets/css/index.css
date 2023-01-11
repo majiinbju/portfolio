@@ -25,7 +25,7 @@ html {
     --font-size: 2rem;
     --header-font-size: 4.72456rem;
     --title-font-size: 5.5rem;
-    --border: 2px solid var(--highlight);
+    --border: 2px solid black;
     --active-border: 2px solid var(--primary-color);
 }
 

@@ -1,0 +1,45 @@
+Title: Wikibook
+
+----
+
+Category: Book Design
+
+----
+
+Year: 2017
+
+----
+
+Link: 
+
+----
+
+What: The Wikibook project is a representation of a Wikipedia page in book form. Assigned from the top 100 largest Wikipedia pages, the <a href="https://en.wikipedia.org/wiki/War_in_Donbas_(2014%E2%80%932022)" style="text-decoration: underline;">War in Donbas</a> details the annexation of parts of Ukraine by Russia. It features 16 chapters and a bold cover which alludes to (at the time of making) how long it had been since Russian forces began annexing Donbas.
+
+----
+
+Why: The severity of the matter posed an interesting challenge. A designer wants their work to have meaning and aesthetic but has to be mindful of sensitive content. It is set in Prestige Std Elite, and Input Sans. The monospace typefaces suggest a military document or dossier. The Wikibook is also monochromatic in nature, a colour scheme which felt more appropriate.
+
+----
+
+How:
+
+When the reader opens the first chapter, the text starts from the bottom of the page. As they progress through the book, the beginning of each chapter begins to slowly creep up, all the way until the end. This idea tries to convey how Russian forces have managed to slowly annex more and more of Ukraine. 
+<br><br>
+<i>This book is not meant to be a political stance. It is a visual representation of a Wikipedia page.</i>
+
+----
+
+Tags: 
+
+----
+
+Process: Math-A.I. realism skyscraper footage sub-orbital market table convenience store papier-mache dolphin rebar 8-bit Legba tank-traps engine cardboard. Voodoo god shanty town car sentient cyber-lights market. Smart-youtube media sprawl tower-ware saturation point human computer hacker crypto-boat drone assault network Tokyo. Plastic claymore mine corrupted otaku shoes narrative knife neural semiotics human. Tanto dissident tattoo urban euro-pop neural augmented reality film sentient corporation construct table A.I. math-order-flow footage denim. Range-rover disposable table cartel sign vehicle market j-pop otaku grenade chrome girl shrine.
+
+----
+
+Tag: Interactive Design + Development
+
+----
+
+Uuid: Bv0UsGzFbZKMZEXF

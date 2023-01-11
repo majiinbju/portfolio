@@ -1,0 +1,33 @@
+Title: JSON CMS
+
+----
+
+Category: Product Design
+
+----
+
+Year: 2022
+
+----
+
+Link: https://joshoots.info
+
+----
+
+What: The JSON CMS aims to provide a low-cost/cheap solution to people looking to build their web portfolios. As the name suggests, all the content is derived from a ".json" file, and displayed using JavaScript. This particular project was made for cinematographer Josh Chakraborty, showcasing all his work.
+
+----
+
+Why: This method of building a CMS affords creatives an opportunity to expand their network. In current day and age, almost everybody has a website for themselves. Be it a doctor, an image consultant or an artist. Considering that artists are always looking to build portfolios but may not always have the economic means to do so, implementing JSON to display information offers a solution that meets the artist's technical levels mid-way. It does not assume that each person will know how to code, but basic knowledge of a computer will allow them to edit information as they see fit.
+
+----
+
+How: Using any text editor, the user can change the styles of their website, including primary and secondary colours, type-faces and also add their favicon. In addition to this, it comes pre-built with fully responsive design that will adjust to any monitor, laptop, phone or tablet.
+
+----
+
+Tags: 
+
+----
+
+Uuid: iclETnCljdsREkaI

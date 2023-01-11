@@ -1,0 +1,33 @@
+Title: Saga of the Lonely Wanderer
+
+----
+
+Category: Zine Design
+
+----
+
+Year: 2020
+
+----
+
+Link: 
+
+----
+
+What: This zine was designed to compile research related to nostalgia. It is designed to find a frame between modern and post-modern. The text by the author relates their feelings about nostalgia, and is supplemented by various research and arguments put forth by academics regarding the same.
+
+----
+
+Why: The modular design calls back to computers of old, specifically their operating systems. The pronounced shapes and borders mimic their inspiration, and the images used are objects that convey a sense of nostalgia. Designers and stylists always look back to the past for inspiration, for example the current trend is reminiscent of Swiss type design with the use of elaborate and thick sans-serifs. This typeface is chosen to reflect the ever-changing status of design, and tries to predict design from the future which would replicate a more classic tone.
+
+----
+
+How: All the text adheres to a strict, defined grid, again harkening back to the more binary style of design, when things were more opaque and conspicuous. The colors have been chosen because of HTML pages of the past, with a small change of bright green instead of blue to highlight certain objects.
+
+----
+
+Tags: 
+
+----
+
+Uuid: 5WEiAj3OFI1PHyrK
