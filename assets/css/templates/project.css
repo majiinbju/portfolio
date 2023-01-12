@@ -36,10 +36,30 @@
 
 .project-gallery {
   grid-column: var(--column-width);
-  list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-row: 7 / 8;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(3rem, auto);
+  list-style-type: none;
+}
+
+.gallery-item {
+  grid-column: span 1;
+}
+
+.gallery-img {
+  margin: 0rem;
+  max-width: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+.project-gallery img {
+  border: var(--border);
+  transition: all 0.5s ease-in-out;
+}
+
+.project-gallery img:hover {
+  border: var(--active-border);
+  cursor: pointer;
 }
 
 .center {
@@ -83,6 +103,7 @@
 
 .process {
   grid-row: 6 / 7;
+  margin-bottom: 3rem;
 }
 
 .project-img {
@@ -110,7 +131,7 @@ section .project-img {
 
 @media (max-width: 50rem) {
   body {
-    font-size: calc(var(--font-size) / 2);
+    font-size: 1.25rem;
   }
 
   .main-grid {
@@ -129,6 +150,10 @@ section .project-img {
     font-weight: normal;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+  }
+
+  .project-tags {
+    grid-column: 1 / -1;
   }
 
   .project-tag {

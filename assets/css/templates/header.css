@@ -4,7 +4,7 @@
     grid-template-columns: repeat(12, [col-start] 1fr);
     text-transform: capitalize;
     margin-bottom: calc(var(--std-margin));
-    /* mix-blend-mode: color-dodge; */
+    align-items: center;
     transition: all 1ms ease-in-out;
 }
 
@@ -34,7 +34,7 @@
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     grid-column: 1 / -1;
     margin: 0rem;
     padding: 0rem;

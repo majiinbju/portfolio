@@ -1,7 +1,6 @@
 /* Project Grid */
 .project__grid {
   display: grid;
-  gap: 1.5rem;
   max-width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-template-rows: minmax(3rem, auto);

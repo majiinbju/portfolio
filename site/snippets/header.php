@@ -16,9 +16,6 @@
               </a>
             </li>
           <?php endforeach ?>
-          <li class="gray">
-              &copy; 2023
-          </li>
         </ul>
 
       </nav>

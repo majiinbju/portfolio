@@ -1,6 +1,8 @@
 <?php snippet('html') ?>
 <?php use Kirby\Text\SmartyPants; snippet('header') ?>
 
+<canvas class="orb-canvas"></canvas>
+
 <main>
 	<div class="container">
 		<div class="project__grid">
