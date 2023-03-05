@@ -1,0 +1,46 @@
+/******************************************************************************
+                            Stylesheet for Portfolio
+******************************************************************************/
+
+/* Root Value Stylings */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Variables */
+:root {
+    --std-margin: 3rem;
+    --primary-color: ;
+    --secondary-color: ;
+    --highlight: ;
+
+/* Text Select animation */
+::selection {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+/* Body Stylings */
+body {
+    margin: 0rem;
+    padding: 0rem;
+    line-height: 1.2;
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+    /* border: var(--border); */
+}
+
+ul {
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+}
