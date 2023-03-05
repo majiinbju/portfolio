@@ -1,6 +1,7 @@
 # System files
 # ------------
-
+/kirby
+/vendor
 Icon
 .DS_Store
 
