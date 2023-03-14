@@ -75,8 +75,8 @@ class ComposerStaticInit0dab3bd7c5162796ee9debaa9929c7f3
         ),
         'Kirby\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/kirby/src',
-            1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            0 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            1 => __DIR__ . '/../..' . '/kirby/src',
         ),
         'Composer\\Semver\\' => 
         array (
@@ -151,6 +151,7 @@ class ComposerStaticInit0dab3bd7c5162796ee9debaa9929c7f3
         'Kirby\\Cms\\Auth\\EmailChallenge' => __DIR__ . '/../..' . '/kirby/src/Cms/Auth/EmailChallenge.php',
         'Kirby\\Cms\\Auth\\Status' => __DIR__ . '/../..' . '/kirby/src/Cms/Auth/Status.php',
         'Kirby\\Cms\\Block' => __DIR__ . '/../..' . '/kirby/src/Cms/Block.php',
+        'Kirby\\Cms\\BlockConverter' => __DIR__ . '/../..' . '/kirby/src/Cms/BlockConverter.php',
         'Kirby\\Cms\\Blocks' => __DIR__ . '/../..' . '/kirby/src/Cms/Blocks.php',
         'Kirby\\Cms\\Blueprint' => __DIR__ . '/../..' . '/kirby/src/Cms/Blueprint.php',
         'Kirby\\Cms\\Collection' => __DIR__ . '/../..' . '/kirby/src/Cms/Collection.php',

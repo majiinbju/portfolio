@@ -6,6 +6,7 @@
   <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
   <?php snippet("bootstrap"); ?>
   <?= css("/assets/css/index.css") ?>
+  <?= js("/assets/js/index.js", ['async' => true, 'defer' => true]) ?>
   <?= css("@auto") ?>
 </head>
 

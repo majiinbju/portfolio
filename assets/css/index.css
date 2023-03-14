@@ -6,41 +6,153 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Variables */
 :root {
-    --std-margin: 3rem;
-    --primary-color: ;
-    --secondary-color: ;
-    --highlight: ;
-
+  --std-margin: 3rem;
+  --primary-color: black;
+  --secondary-color: white;
+  --h1: 7.5rem;
+  --font-size: 1.5rem;
+}
 /* Text Select animation */
 ::selection {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-  }
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
 
 /* Body Stylings */
 body {
-    margin: 0rem;
-    padding: 0rem;
-    line-height: 1.2;
-    min-height: 100%;
+  font-family: Helvetica, ui-sans-serif, sans-serif, arial;
+  font-weight: 300;
+  font-size: var(--font-size);
+  margin: 0rem;
+  padding: 0rem;
+  background-color: var(--primary-color);
+  color: white;
+  line-height: 1.2;
+  min-height: 100%;
 }
 
 img {
-    max-width: 100%;
-    /* border: var(--border); */
+  max-width: 100%;
 }
 
 ul {
-    list-style: none;
-    margin: 0rem;
-    padding: 0rem;
+  list-style: none;
+  margin: 0rem;
+  padding: 0rem;
 }
+
+.h1 {
+  font-size: var(--h1);
+  line-height: 1;
+}
+
+.moving-text {
+  --bg-size: 400%;
+  --color-one: hsl(291, 47%, 60%);
+  --color-two: hsl(340, 82%, 59%);
+  --color-three: hsl(207, 90%, 77%);
+  --color-four: hsl(187, 71%, 82%);
+  background: linear-gradient(
+      130deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-four),
+      var(--color-three),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+}
+
+/* Section */
+section {
+  width: 100vw;
+  min-height: 95vh;
+}
+
+h1 {
+  height: 7.5rem;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 2.25s ease-in;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(2.5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+.slideUp {
+  animation: slideUp 0.75s linear;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-10rem);
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
+
+.slideIn {
+  animation: slideIn 0.75s ease-in-out;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+
+/* Gradient Text */
+
+@media (prefers-reduced-motion: no-preference) {
+  .moving-text {
+    animation: move-bg 20s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+

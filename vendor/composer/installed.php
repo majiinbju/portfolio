@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'getkirby/plainkit',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '0665f77980d1a85c7b039d3d9c7dd921c42d2094',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'getkirby/cms' => array(
-            'pretty_version' => '3.9.1',
-            'version' => '3.9.1.0',
-            'reference' => '617a07aa0151aa4b1a3735b3b5e1a41ccc244a43',
+            'pretty_version' => '3.9.2',
+            'version' => '3.9.2.0',
+            'reference' => '9ecd11cd5b7d4875d4212f767a2b3ad3e52b3528',
             'type' => 'kirby-cms',
             'install_path' => __DIR__ . '/../../kirby',
             'aliases' => array(),
@@ -56,9 +56,9 @@
             'dev_requirement' => false,
         ),
         'getkirby/plainkit' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '0665f77980d1a85c7b039d3d9c7dd921c42d2094',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
