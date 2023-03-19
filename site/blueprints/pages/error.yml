@@ -1,0 +1,13 @@
+title: Error
+image:
+  icon: ❌
+  back: "black"
+sections:
+  info:
+    type: fields
+    fields:
+      Text:
+        label: Text
+        type: textarea
+        icon: 📝
+        required: true

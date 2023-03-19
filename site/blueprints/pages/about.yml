@@ -1,0 +1,18 @@
+title: About
+image:
+  icon: 🧑🏾
+  back: "black"
+sections:
+  info:
+    type: fields
+    fields:
+      About:
+        label: About
+        type: textarea
+        icon: 📝
+        required: true
+      Links:
+        label: Links
+        type: textarea
+        icon: 🔗
+        required: true

@@ -18,7 +18,6 @@ html {
   --std-margin: 3rem;
   --primary-color: black;
   --secondary-color: white;
-  --h1: 7.5rem;
   --font-size: 1.5rem;
 }
 /* Text Select animation */
@@ -50,11 +49,6 @@ ul {
   padding: 0rem;
 }
 
-.h1 {
-  font-size: var(--h1);
-  line-height: 1;
-}
-
 .moving-text {
   --bg-size: 400%;
   --color-one: hsl(291, 47%, 60%);
@@ -73,25 +67,14 @@ ul {
     )
     0 0 / var(--bg-size) 100%;
   color: transparent;
-  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* Section */
 section {
   width: 100vw;
-  min-height: 95vh;
+  min-height: 100vh;
 }
-
-h1 {
-  height: 7.5rem;
-}
-
-.title {
-  width: 100%;
-  display: flex;
-}
-
-
 
 /* Animations */
 @keyframes fadeIn {

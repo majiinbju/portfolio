@@ -1,0 +1,25 @@
+title: Home
+image:
+  icon: 🏠
+  back: "black"
+sections:
+  published:
+    headline: Published
+    type: pages
+    layout: cards
+    template: project
+    info: "{{ page.year }}"
+    status: published
+    image:
+      ratio: 4/5
+      cover: true
+  drafts:
+    headline: Drafts
+    type: pages
+    layout: cards
+    template: project
+    info: "{{ page.year }}"
+    status: drafts
+    image:
+      ratio: 4/5
+      cover: true

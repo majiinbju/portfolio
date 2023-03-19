@@ -1,0 +1,29 @@
+Title: About
+
+----
+
+About:
+
+A 24 year old designer driven by his passion to solve problems. His creative side is informed by a keen interest in different forms of media.
+<br>
+<br>
+He earned a scholarship and refined his skills at the Parsons School of Design in New York, where he started learning how to code and build interactive narratives.
+<br>
+<br>
+He has previously worked at <a href="https://www.bokaap.design/">Bokaap Design</a> and <a href="https://ideaspice.com/">IdeaSpice</a>, in Mumbai.
+<br>
+<br>
+Website built using <a href="https://getkirby.com/">Kirby</a>.
+
+----
+
+Links:
+
+<a href="https://github.com/majiinbju" target="_blank">Github</a><br>
+<a href="https://www.are.na/vivek" target="_blank">Are.na</a><br>
+<a href="https://www.linkedin.com/in/vivek-bajaj-4a8035152/" target="_blank">LinkedIn</a><br>
+<a href="./assets/resume/resume.pdf" target="_blank">Resume</a><br>
+
+----
+
+Uuid: xsijF7KUes4b7wRX

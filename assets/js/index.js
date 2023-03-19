@@ -1,4 +1,4 @@
-const words = [ "विवेक /ʋɪ.ʋeːk/ ","designer  + developer ", "based in new york & mumbai" ];
+const words = [ "विवेक + /ʋɪ.ʋeːk/ ","designer  + developer ", "new york + mumbai" ];
 let i = 0;
 let timer;
 

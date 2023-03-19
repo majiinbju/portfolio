@@ -1,0 +1,25 @@
+.h1 {
+  font-size: 3rem;
+}
+
+.navbar {
+  position: fixed;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-link {
+  text-transform: lowercase;
+  color: white;
+}
+
+/* Title Tag */
+.title {
+  width: 100%;
+  display: flex;
+  font-size: 1rem;
+}
+
