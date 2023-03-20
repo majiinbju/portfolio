@@ -15,4 +15,4 @@
 
 
 
-<body>
+<body class="vstack">

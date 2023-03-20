@@ -1,5 +1,6 @@
 # System files
 # ------------
+.htaccess
 /kirby
 /vendor
 Icon
@@ -21,6 +22,7 @@ Icon
 *.sublime-workspace
 /.vscode
 /.idea
+/.nova
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!

@@ -1,9 +1,44 @@
+header {
+  margin-bottom: 1rem;
+  animation: fadeIn 1s linear;
+}
+
+/* Header Logo */
+.moving-text {
+  --bg-size: 400%;
+  --color-one: hsl(291, 47%, 60%);
+  --color-two: hsl(340, 82%, 59%);
+  --color-three: hsl(207, 90%, 77%);
+  --color-four: hsl(187, 71%, 82%);
+  background: linear-gradient(
+      130deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-four),
+      var(--color-three),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.sticky {
+    top: 1rem;
+    position: sticky;
+    /* font-size: 1.5rem; */
+    z-index: 5;
+}
+
 .h1 {
   font-size: 3rem;
 }
 
 .navbar {
-  position: fixed;
+  z-index: 2;
   font-size: 1.25rem;
 }
 
@@ -21,5 +56,16 @@
   width: 100%;
   display: flex;
   font-size: 1rem;
+  animation: fadeIn 2.25s ease-in;
 }
 
+/* Blinking animation */
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}

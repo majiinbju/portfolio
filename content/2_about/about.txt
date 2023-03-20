@@ -25,5 +25,3 @@ Links:
 <a href="./assets/resume/resume.pdf" target="_blank">Resume</a><br>
 
 ----
-
-Uuid: xsijF7KUes4b7wRX

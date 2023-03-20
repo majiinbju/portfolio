@@ -1,7 +1,3 @@
-/******************************************************************************
-                            Stylesheet for Portfolio
-******************************************************************************/
-
 /* Root Value Stylings */
 *,
 *::before,
@@ -36,44 +32,13 @@ body {
   background-color: var(--primary-color);
   color: white;
   line-height: 1.2;
+  width: 100%;
   min-height: 100%;
+  min-width: 320px;
 }
 
 img {
   max-width: 100%;
-}
-
-ul {
-  list-style: none;
-  margin: 0rem;
-  padding: 0rem;
-}
-
-.moving-text {
-  --bg-size: 400%;
-  --color-one: hsl(291, 47%, 60%);
-  --color-two: hsl(340, 82%, 59%);
-  --color-three: hsl(207, 90%, 77%);
-  --color-four: hsl(187, 71%, 82%);
-  background: linear-gradient(
-      130deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-three),
-      var(--color-four),
-      var(--color-three),
-      var(--color-two),
-      var(--color-one)
-    )
-    0 0 / var(--bg-size) 100%;
-  color: transparent;
-  -webkit-background-clip: text;
-}
-
-/* Section */
-section {
-  width: 100vw;
-  min-height: 100vh;
 }
 
 /* Animations */
@@ -84,46 +49,6 @@ section {
   to {
     opacity: 1;
   }
-}
-
-.fadeIn {
-  animation: fadeIn 2.25s ease-in;
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(2.5rem);
-  }
-  to {
-    transform: translateY(0rem);
-  }
-}
-
-.slideUp {
-  animation: slideUp 0.75s linear;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-10rem);
-  }
-  to {
-    transform: translateX(0rem);
-  }
-}
-
-.slideIn {
-  animation: slideIn 0.75s ease-in-out;
-}
-
-@keyframes blink {
-  100% {
-    opacity: 0;
-  }
-}
-
-.blink {
-  animation: blink 0.5s infinite;
 }
 
 /* Gradient Text */
@@ -138,4 +63,3 @@ section {
     }
   }
 }
-

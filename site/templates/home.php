@@ -1,18 +1,6 @@
 <?php snippet("html"); ?>
-
-<head>
-	<?php snippet("header"); ?>
-</head>
-
-<main>
-	
-	<!-- Section 1 - Intro -->
-	<section>
-		
-	</section>
-	<!-- End of Section 1 -->
-	
+<?php snippet("header"); ?>
+<main class="mb-5">	
+<?php snippet("project-grid"); ?>
 </main>
-
-<?php snippet("footer");
-?>
+<?php snippet("footer"); ?>

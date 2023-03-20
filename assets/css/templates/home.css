@@ -1,0 +1,68 @@
+/* Project grid */
+.project-grid {
+  display: grid;
+  max-width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: minmax(3rem, auto);
+  animation: fadeIn 2s linear;
+}
+
+/* Project Grid Breakpoints */
+@media (min-width: 40rem) {
+  .card {
+    grid-column: span 2;
+  }
+}
+
+/* Projects */
+ul {
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+a {
+    margin: 0rem;
+    padding: 0rem;
+    color: currentColor;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Project Card */
+.card {
+  aspect-ratio: 16 / 9;
+  background: none;
+}
+
+.card-title {
+  /* text-indent: 4rem; */
+  font-size: var(--font-size);
+  font-weight: normal;
+}
+
+.card-img-container {
+  background-color: none;
+  overflow: hidden;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.card-img {
+  width: 100%;
+  opacity: 1;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.card:hover .card-img {
+  opacity: 0.9;
+}
+
+.card:hover .card-img-container {
+  background-color: white;
+}
