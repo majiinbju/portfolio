@@ -1,10 +1,12 @@
-const words = [ "विवेक + /ʋɪ.ʋeːk/ ","designer  + developer ", "new york + mumbai" ];
+// Site title animation
+const words = ["विवेक + /ʋɪ.ʋeːk/ ", "designer  + developer ", "new york + mumbai"];
 let i = 0;
 let timer;
 
+// Effect to type words
 function typingEffect() {
   let word = words[i].split("");
-  var loopTyping = function () {
+  let loopTyping = function () {
     if (word.length > 0) {
       document.getElementById("word").innerHTML += word.shift();
     } else {
@@ -16,9 +18,10 @@ function typingEffect() {
   loopTyping();
 }
 
+// Effect to delete words
 function deletingEffect() {
   let word = words[i].split("");
-  var loopDeleting = function () {
+  let loopDeleting = function () {
     if (word.length > 0) {
       word.pop();
       document.getElementById("word").innerHTML = word.join("");

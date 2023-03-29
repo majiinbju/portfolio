@@ -16,6 +16,7 @@ html {
   --secondary-color: white;
   --font-size: 1.5rem;
 }
+
 /* Text Select animation */
 ::selection {
   background: var(--secondary-color);
@@ -52,14 +53,25 @@ img {
 }
 
 /* Gradient Text */
-
 @media (prefers-reduced-motion: no-preference) {
   .moving-text {
     animation: move-bg 20s linear infinite;
   }
+
   @keyframes move-bg {
     to {
       background-position: var(--bg-size) 0;
     }
   }
+}
+
+/* Cursor Effect */
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
