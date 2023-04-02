@@ -11,7 +11,7 @@
 						<h3 class="h3 card-title mt-lg-4">
 							<?= $project->title() ?>
 						</h3>
-						<span class="card-body text-secondary p-0">
+						<span class="card-body">
 							<?= $project->category() ?>
 						</span>
 					</a>

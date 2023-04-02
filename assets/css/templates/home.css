@@ -8,26 +8,19 @@
   animation: fadeIn 2s linear;
 }
 
-/* Project Grid Breakpoints */
-@media (min-width: 40rem) {
-  .card {
-    grid-column: span 2;
-  }
-}
-
 /* Projects */
 ul {
-    list-style: none;
-    margin: 0rem;
-    padding: 0rem;
+  list-style: none;
+  margin: 0rem;
+  padding: 0rem;
 }
 
 a {
-    margin: 0rem;
-    padding: 0rem;
-    color: currentColor;
-    text-decoration: none;
-    transition: all 0.25s ease-in-out;
+  margin: 0rem;
+  padding: 0rem;
+  color: currentColor;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
 }
 
 /* Project Card */
@@ -38,8 +31,14 @@ a {
 
 .card-title {
   /* text-indent: 4rem; */
-  font-size: var(--font-size);
+  font-size: 2rem;
   font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover .card-title {
+  color: rgba(255, 255, 255, 1);
 }
 
 .card-img-container {
@@ -47,7 +46,10 @@ a {
   overflow: hidden;
   border-radius: 30px;
   transition: all 0.2s ease-in-out;
+}
 
+.card:hover .card-img-container {
+  box-shadow: 0px 0px 3px 2px rgba(199, 94,180, 1);
 }
 
 .card-img {
@@ -58,11 +60,27 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
-
 .card:hover .card-img {
   opacity: 0.9;
 }
 
+.card-body {
+  font-size: 1.5rem;
+  color: gray;
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover .card-body {
+  color: white;
+}
+
 .card:hover .card-img-container {
   background-color: white;
+}
+
+/* Project Grid Breakpoints */
+@media (min-width: 40rem) {
+  .card {
+    grid-column: span 2;
+  }
 }

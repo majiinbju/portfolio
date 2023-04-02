@@ -15,6 +15,7 @@ html {
   --primary-color: black;
   --secondary-color: white;
   --font-size: 1.5rem;
+  --h1: 3rem;
 }
 
 /* Text Select animation */
@@ -70,8 +71,20 @@ img {
   height: 24px;
   width: 24px;
   border-radius: 24px;
-  background-color: white;
+  background-color: purple;
+  box-shadow: 1px 1px 1px 1px blue;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;
 }

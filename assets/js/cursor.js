@@ -25,6 +25,9 @@ function animateCircles() {
   circles.forEach(function (circle, index) {
     circle.style.left = x - 12 + "px";
     circle.style.top = y - 12 + "px";
+
+    circle.style.scale = (circles.length - index) / circles.length;
+
     circle.x = x;
     circle.y = y;
 
@@ -32,4 +35,8 @@ function animateCircles() {
     x += (nextCircle.x - x) * 0.25;
     y += (nextCircle.y - y) * 0.25;
   })
+
+  reqiestAnimationFrame(animateCircles);
 }
+
+animateCircles();
