@@ -6,10 +6,6 @@ header {
 /* Header Logo */
 .moving-text {
   --bg-size: 400%;
-  --color-one: hsl(291, 47%, 60%);
-  --color-two: hsl(340, 82%, 59%);
-  --color-three: hsl(207, 90%, 77%);
-  --color-four: hsl(187, 71%, 82%);
   background: linear-gradient(
       130deg,
       var(--color-one),
@@ -24,6 +20,19 @@ header {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+/* Gradient Text */
+@media (prefers-reduced-motion: no-preference) {
+  .moving-text {
+    animation: move-bg 20s linear infinite;
+  }
+
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
 }
 
 .sticky {
