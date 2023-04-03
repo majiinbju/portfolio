@@ -32,7 +32,8 @@ a {
   font-size: var(--font-size);
   color: gray;
   bottom: 0rem;
-  padding: 2rem;
+  padding: var(--margin);
+  border-radius: 30px;
   position: absolute;
   opacity: 0;
   transition: all 0.4s ease-in-out;
@@ -65,7 +66,7 @@ a {
 .card:hover .card-img-container {
   background-color: black;
   filter: blur(0.75px);
-  box-shadow: 0px 0px 3px 2px hsl(291, 47%, 60%);
+  box-shadow: var(--box-shadow);
 }
 
 .card-img {
@@ -77,7 +78,7 @@ a {
 }
 
 .card:hover .card-img {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 /* Project Grid Breakpoints */

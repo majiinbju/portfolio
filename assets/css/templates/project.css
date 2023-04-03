@@ -1,0 +1,28 @@
+/* project image */
+.project-img {
+	width: 100%;
+	border-radius: 20px;
+	opacity: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.project-img:hover {
+	opacity: 95%;
+	box-shadow: var(--box-shadow);
+}
+
+/* project title heading */
+.heading {
+	font-size: 5rem;
+}
+
+/* tags */
+.sub-heading {
+	font-size: 1rem;
+}
+
+.tags {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
