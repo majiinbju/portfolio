@@ -1,0 +1,48 @@
+title: Project
+
+columns:
+  - width: 1/2
+    sections:
+      info:
+        type: fields
+        fields:
+          Category:
+            label: Category
+            type: text
+            width: 1/2
+            icon: tag
+            required: true
+          year:
+            label: year
+            type: number
+            min: 2016
+            width: 1/2
+            icon: clock
+            required: true
+          link:
+            label: Link
+            type: url
+          tags:
+            label: Tags
+            type: tags
+          role:
+            label: Role
+            type: text
+            icon: user
+          summary:
+            label: Summary
+            type: textarea
+            help: Introduction to the project
+            icon: text
+
+  - width: 1/2
+    sections:
+      gallery:
+        headline: Project Images
+        type: files
+        layout: cards
+        template: gallery-image
+        info: "{{ file.alt }} / {{ file.dimensions }}"
+        image:
+          ratio: 1/1
+          cover: true

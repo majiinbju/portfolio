@@ -19,8 +19,9 @@ html {
   --box-shadow: 0px 0px 3px 2px var(--color-one);
   --primary-color: black;
   --secondary-color: white;
-  --font-size: 1.5rem;
+  --font-size: 1.16rem;
   --h1: 3rem;
+  --letter-spacing: -0.25px;
 }
 
 /* Text Select animation */
@@ -38,7 +39,8 @@ body {
   padding: 0rem;
   background-color: var(--primary-color);
   color: white;
-  line-height: 1.2;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing);
   width: 100%;
   min-height: 100%;
   min-width: 320px;
