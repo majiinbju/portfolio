@@ -6,5 +6,6 @@
       const observer = lozad();
       observer.observe();
 </script>
+
 </body>
 </html>

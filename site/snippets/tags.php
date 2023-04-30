@@ -1,4 +1,4 @@
-<ul class="d-flex w-100 justify-content-between tags mt-2 p-3">
+<ul class="d-flex flex-column w-100 justify-content-between tags mt-2 p-4">
    <?php if ($page->category()->isNotEmpty()) : ?>
       <li class="sub-heading">
          <?= $page->category() ?>

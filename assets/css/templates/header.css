@@ -37,7 +37,7 @@ header {
 
 .sticky {
     top: 1rem;
-    position: sticky;
+    position: relative;
     /* font-size: 1.5rem; */
     z-index: 5;
 }
