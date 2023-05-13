@@ -7,7 +7,6 @@
   <p class="summary w-100 p-4 pt-0">
     <?= $page->summary(); ?>
   </p>
-
   <!-- tags -->
   <?php snippet("tags"); ?>
 </div>

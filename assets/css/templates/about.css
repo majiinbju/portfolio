@@ -1,0 +1,14 @@
+.summary {
+  font-size: var(--font-size);
+  animation: fadeIn 0.75s ease-in-out;
+}
+
+a {
+  color: var(--color-one);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: white;
+}

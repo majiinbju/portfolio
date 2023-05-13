@@ -37,6 +37,11 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
+.link {
+  text-decoration: none;
+  color: var(--color-one);
+}
+
 .tags {
   color: gray;
   list-style-type: none;

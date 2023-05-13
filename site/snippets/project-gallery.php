@@ -7,7 +7,9 @@
             <?= $image->caption() ?>
           </p>
         <?php endif ?>
-        <img src="<?= $image->url() ?>" class="w-50 gallery-img align-self-center" alt="<?= $image->alt() ?>">
+        <a href="<?= $image->url() ?>" data-toggle="lightbox" class="w-50">
+        <img src="<?= $image->url() ?>" class="gallery-img align-self-center lozad" alt="<?= $image->alt() ?>">
+        </a>
       </li>
     <?php endforeach ?>
   </ul>

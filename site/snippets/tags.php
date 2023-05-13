@@ -19,4 +19,12 @@
          <?= $page->year() ?>
       </li>
    <?php endif ?>
+
+   <?php if ($page->link()->isNotEmpty()) : ?>
+      <li class="sub-heading">
+         <a href="<?= $page->link() ?>" class="link">
+            View Project
+         </a>
+      </li>
+   <?php endif ?>
 </ul>

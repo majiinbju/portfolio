@@ -2,9 +2,7 @@
 
 <?php snippet("header"); ?>
 
-<main>
-	<div class="container">
-	</div>
+<main class="mb-5">
 </main>
 
 <?php snippet("footer");
