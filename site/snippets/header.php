@@ -1,5 +1,5 @@
-<header class="sticky mb-5">
-	<nav class="navbar navbar-expand-md navbar-dark w-100 justify-content-between pt-3">
+<header class="sticky mb-5 header">
+	<nav class="navbar navbar-expand-sm navbar-dark w-100 justify-content-between pt-3">
 		<div class="container d-flex align-items-start">
 			<div class="row d-flex">
 				<a href="<?= $site->url() ?>" class="navbar-brand">

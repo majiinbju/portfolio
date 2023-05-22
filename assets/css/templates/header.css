@@ -78,3 +78,15 @@ header {
 .blink {
   animation: blink 0.5s infinite;
 }
+
+/*Medium devices (tablets, less than 992px)*/
+
+@media (max-width: 991.98px) {
+  .header {
+    margin: 1rem
+  }
+
+  .title {
+    font-size: 0rem;
+  }
+}
