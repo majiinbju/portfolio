@@ -4,7 +4,7 @@
     <?= $page->title(); ?>
   </h2>
   <!-- summary -->
-  <p class="summary w-100 p-4 pt-0">
+  <p class="summary w-100 p-4 pb-0 pt-0">
     <?= $page->summary(); ?>
   </p>
   <!-- tags -->

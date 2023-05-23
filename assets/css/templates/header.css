@@ -83,9 +83,9 @@ header {
 
 @media (max-width: 991.98px) {
   .header {
-    margin: 1rem
+    margin: 1rem;
   }
-
+  
   .title {
     font-size: 0rem;
   }
