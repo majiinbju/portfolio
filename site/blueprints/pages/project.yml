@@ -29,6 +29,10 @@ columns:
             label: Role
             type: text
             icon: user
+          credits:
+            label: Credits
+            type: textarea
+            icon: text
           summary:
             label: Summary
             type: textarea
