@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&display=swap');
 
 
 /* Root Value Stylings */
@@ -24,7 +24,7 @@ html {
   --secondary-color: white;
   --font-size: 1.16rem;
   --h1: 3rem;
-  --letter-spacing: -0.25px;
+  --letter-spacing: -0.5px;
 }
 
 /* Text Select animation */
@@ -35,14 +35,14 @@ html {
 
 /* Body Stylings */
 body {
-  font-family: Helvetica, ui-sans-serif, sans-serif, arial;
+  font-family: Inter, Helvetica, ui-sans-serif, sans-serif, arial;
   font-weight: 300;
   font-size: var(--font-size);
   margin: 0rem;
   padding: 0rem;
   background-color: var(--primary-color);
   color: white;
-  line-height: 1.5;
+  line-height: 1.4;
   letter-spacing: var(--letter-spacing);
   width: 100%;
   min-height: 100%;
