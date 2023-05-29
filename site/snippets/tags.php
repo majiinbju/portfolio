@@ -26,7 +26,6 @@
 
    <?php if ($page->link()->isNotEmpty()) : ?>
       <li class="sub-heading">
-         <i>Link</i>
          <a href="<?= $page->link() ?>" class="link">
             View Project↗︎
          </a>
