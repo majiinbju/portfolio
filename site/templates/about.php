@@ -3,8 +3,8 @@
 <?php snippet("header"); ?>
 
   <main class="mb-5">
-    <div class="container">
-      <p class="summary p-4 pt-0">
+    <div class="container summary-container">
+      <p class="summary p-4 pt-0 text-md-center">
         <?= $page->about(); ?>
       </p>
     </div>

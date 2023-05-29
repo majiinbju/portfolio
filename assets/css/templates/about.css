@@ -1,6 +1,11 @@
 .summary {
+  width: 100%;
   font-size: var(--font-size);
   animation: fadeIn 0.75s ease-in-out;
+}
+
+.summary-container {
+  width: 50%;
 }
 
 a {
@@ -11,4 +16,12 @@ a {
 
 a:hover {
   color: white;
+}
+
+/*Medium devices (tablets, less than 992px)*/
+
+@media (max-width: 991.98px) {
+  .summary-container {
+    width: 100%;
+  }
 }

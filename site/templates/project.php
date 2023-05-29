@@ -1,13 +1,11 @@
 <?php snippet("html"); ?>
 <?php snippet("header"); ?>
 <main class="mb-5">
-    <div class="container w-100 d-md-flex align-items-center">
+    <div class="container info d-md-flex flex-column align-items-center">
         <?php snippet("project-info"); ?>
-        <!-- image -->
-        <div class="container d-flex flex-column justify-content-start">
-            <?php snippet("project-image"); ?>
-        </div>
     </div>
-    <?php snippet("project-gallery"); ?>
+    <div class="container w-100">
+        <?php snippet("project-gallery"); ?>
+    </div>
 </main>
 <?php snippet("footer"); ?>
