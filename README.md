@@ -1,34 +1,28 @@
-<img src="http://getkirby.com/assets/images/github/plainkit.jpg" width="300">
+﻿# 🐉 Greetings
+👋🏾 Hi, I'm **Vivek**, an enthusiastic young **graphic designer** looking for opportunities to optimize and maximize his skills. My work is motivated by incorporating design principles in a way that helps people.
 
+👨🏾‍💻 Experienced in **building interactive and responsive websites**. I am driven by a problem-solving mind-set and eager to learn new skills.
 
-**Kirby: the CMS that adapts to any project, loved by developers and editors alike.**  
-The Plainkit is a minimal Kirby setup with the basics you need to start a project from scratch. It is the ideal choice if you are already familiar with Kirby and want to start step-by-step.
+🎓 *[Parsons School of Design](https://www.newschool.edu/parsons/)* 
 
-You can learn more about Kirby at [getkirby.com](https://getkirby.com).
+## 👽 About me
+🎯 My goal in any design project is to bridge the gap between meaning and aesthetics. As such, I like to make interactive experiences which take advantage of the web's capabilities.
+ 
+*I am currently looking for opportunities to work with interesting people and grow in the process*
 
-### Try Kirby for free  
-You can try Kirby and the Plainkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
+## 🛠️ Technologies
+-  🧱 Website built using [KirbyCMS](https://getkirby.com)
+-  👨🏾‍🎨 [Bootstrap 5](https://getbootstrap.com)
+-  👷🏾‍♂️ JavaScript
 
-### Get going
-Read our guide on [how to get started with Kirby](https://getkirby.com/docs/guide/quickstart).
-
-You can [download the latest version](https://github.com/getkirby/plainkit/archive/master.zip) of the Plainkit.  
-If you are familiar with Git, you can clone Kirby's Plainkit repository from Github.
-
-    git clone https://github.com/getkirby/plainkit.git
-
-## What's Kirby?
-- **[getkirby.com](https://getkirby.com)** – Get to know the CMS.
-- **[Try it](https://getkirby.com/try)** – Take a test ride with our online demo. Or download one of our kits to get started.
-- **[Documentation](https://getkirby.com/docs/guide)** – Read the official guide, reference and cookbook recipes.
-- **[Issues](https://github.com/getkirby/kirby/issues)** – Report bugs and other problems.
-- **[Feedback](https://feedback.getkirby.com)** – You have an idea for Kirby? Share it.
-- **[Forum](https://forum.getkirby.com)** – Whenever you get stuck, don't hesitate to reach out for questions and support.
-- **[Discord](https://chat.getkirby.com)** – Hang out and meet the community.
-- **[Twitter](https://twitter.com/getkirby)** – Spread the word.
-- **[Instagram](https://www.instagram.com/getkirby/)** – Share your creations: #madewithkirby.
+## License
+Copyright © 2023 [Vivek Bajaj](https://github.com/majiinbju).  
+This project is MIT licensed.
 
 ---
+> [viv1.info](https://www.viv1.info) &nbsp;&middot;&nbsp;
+> [@majiinbju](https://github.com/majiinbju) &nbsp;&middot;&nbsp;
+> [linkedin](https://www.linkedin.com/in/vivek-bajaj) &nbsp;&middot;&nbsp;
+> [email](mailto:vivekbajaj14@gmail.com)
+---
 
-© 2009-2020 Bastian Allgeier (Bastian Allgeier GmbH)  
-[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)
