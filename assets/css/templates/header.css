@@ -7,16 +7,15 @@ header {
 .moving-text {
   --bg-size: 400%;
   background: linear-gradient(
-      130deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-three),
-      var(--color-four),
-      var(--color-three),
-      var(--color-two),
-      var(--color-one)
-    )
-    0 0 / var(--bg-size) 100%;
+    130deg,
+    var(--color-one),
+    var(--color-two),
+    var(--color-three),
+    var(--color-four),
+    var(--color-three),
+    var(--color-two),
+    var(--color-one)
+  ) 0 0 / var(--bg-size) 100%;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -36,10 +35,10 @@ header {
 }
 
 .sticky {
-    top: 1rem;
-    position: relative;
-    /* font-size: 1.5rem; */
-    z-index: 5;
+  top: 1rem;
+  position: relative;
+  /* font-size: 1.5rem; */
+  z-index: 5;
 }
 
 .h1 {
@@ -84,8 +83,8 @@ header {
   .header {
     margin: 1rem;
   }
-  
+
   .title {
-    font-size: 0rem;
+    display: none;
   }
 }

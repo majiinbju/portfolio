@@ -1,6 +1,6 @@
 <header class="sticky mb-5 header">
 	<nav class="navbar navbar-expand-sm navbar-dark w-100 justify-content-between pt-3">
-		<div class="container d-flex align-items-start">
+		<div class="container d-flex align-items-center">
 			<div class="row d-flex">
 				<a href="<?= $site->url() ?>" class="navbar-brand">
 					<h1 class="h1 moving-text"><?= $site->title() ?></h1>
