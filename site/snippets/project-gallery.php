@@ -6,11 +6,11 @@
           <a href="<?= $image->url() ?>" data-toggle="lightbox" class="a">
             <img src="<?= $image->url() ?>" class="gallery-img align-self-center lozad" alt="<?= $image->alt() ?>">
             <?php if ($image->alt()->isNotEmpty()) : ?>
-              <p class="align-self-start p-4 text-center">
+              <p class="align-self-start p-4 pb-0 text-center">
                 <?= $image->alt()->smartypants() ?>
               </p>
             <?php endif ?>
-            <p class="align-self-start p-4 pt-0 me-md-5 caption text-md-center">
+            <p class="align-self-start p-4 me-md-5 caption text-md-center">
                 <?= $image->caption()->smartypants() ?>
               </p>
           </a>
@@ -20,7 +20,7 @@
           <a href="<?= $image->url() ?>" data-toggle="lightbox" class="a">
             <img src="<?= $image->url() ?>" class="gallery-img align-self-center lozad" alt="<?= $image->alt() ?>">
             <?php if ($image->alt()->isNotEmpty()) : ?>
-              <p class="align-self-start text-md-center">
+              <p class="align-self-start p-4 text-md-center">
                 <?= $image->alt()->smartypants() ?>
               </p>
             <?php endif ?>
