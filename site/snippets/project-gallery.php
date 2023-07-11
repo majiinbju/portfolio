@@ -10,9 +10,9 @@
                 <?= $image->alt()->smartypants() ?>
               </p>
             <?php endif ?>
-            <p class="align-self-start p-4 me-md-5 caption text-md-center">
-                <?= $image->caption()->smartypants() ?>
-              </p>
+            <p class="align-self-start p-4 me-md-5 caption" style="text-indent: 7.5%;">
+              <?= $image->caption()->smartypants() ?>
+            </p>
           </a>
         
         <?php endif ?>

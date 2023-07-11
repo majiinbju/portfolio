@@ -14,9 +14,9 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-a:hover {
+/* a:hover {
   color: white;
-}
+} */
 
 /*Medium devices (tablets, less than 992px)*/
 

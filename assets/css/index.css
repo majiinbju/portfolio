@@ -63,17 +63,45 @@ img {
   }
 }
 
-// X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
+/* Hover Effects */
+@media(hover: hover) and (pointer: fine) {
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { ... }
+  .a:hover {
+    color: var(--color-one);
+  }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { ... }
+  .a:hover img{
+    opacity: 95%;
+    box-shadow: var(--box-shadow);
+  }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
+  .gallery-img:hover {
+    opacity: 95%;
+    box-shadow: var(--box-shadow);
+  }
 
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { ... }
+  .project-img:hover {
+    opacity: 95%;
+    box-shadow: var(--box-shadow);
+  }
+
+  .card:hover .card-body {
+    color: white;
+    opacity: 1;
+  }
+
+  .card:hover .card-title {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .card:hover .img {
+    background-color: black;
+    filter: blur(0.75px);
+    box-shadow: var(--box-shadow);
+  }
+
+  .card:hover .card-img {
+    opacity: 0.7;
+  }
+
+}
