@@ -23,6 +23,7 @@ html {
   --primary-color: black;
   --secondary-color: white;
   --font-size: 1.16rem;
+  --sub-heading: 1.25rem;
   --h1: 3rem;
   --letter-spacing: -0.5px;
 }

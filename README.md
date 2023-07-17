@@ -13,6 +13,7 @@
 ## 🛠️ Technologies
 -  🧱 Website built using [KirbyCMS](https://getkirby.com)
 -  👨🏾‍🎨 [Bootstrap 5](https://getbootstrap.com)
+-  👨🏾‍💻 [Bootstrap Lightbox] (https://ashleydw.github.io/lightbox/)
 -  👷🏾‍♂️ JavaScript
 
 ## License

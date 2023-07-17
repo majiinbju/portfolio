@@ -9,9 +9,5 @@
   const observer = lozad();
   observer.observe();
 </script>
-<script>
-  const observer = lozad();
-  observer.observe();
-</script>
 </body>
 </html>

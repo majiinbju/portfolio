@@ -8,7 +8,7 @@
     <?php snippet("project-image"); ?>
   </div>
   <!-- summary -->
-  <p class="summary w-100 p-4 mt-2 pb-0">
+  <p class="summary w-100 p-4 mt-2 pb-0 text-md-center">
     <?= $page->summary()->smartypants(); ?>
   </p>
   <!-- tags -->

@@ -6,11 +6,19 @@ Caption: Designing a rebrand for Joe’s had to speak to the unique feeling I as
 
 ----
 
-Photographer: 
+Heading: Try
 
 ----
 
 License: 
+
+----
+
+Header: Is it working?
+
+----
+
+Photographer: 
 
 ----
 

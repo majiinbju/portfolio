@@ -1,6 +1,6 @@
 title: Gallery Image
 
-accept: 
+accept:
   mime: image/*
   type: image
   maxsize: 400000000
@@ -12,7 +12,7 @@ fields:
   caption:
     type: textarea
     width: 1/2
-  photographer:
+  heading:
     type: text
     width: 1/2
   license:

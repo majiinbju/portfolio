@@ -40,5 +40,3 @@ function deletingEffect() {
 }
 
 typingEffect();
-
-console.log(document.getElementById("word"))

@@ -4,7 +4,7 @@
       <div class="card">
         <a href="<?= $project->url() ?>">
           <div class="card-img-container ">
-            <img src="<?= $project->image()->url() ?>" alt="" class="card-img lozad"/>
+            <img src="<?= $project->image()->url() ?>" alt="<?= $project->image()->alt() ?>" class="card-img lozad"/>
           </div>
           <div class="card-body">
             <h3 class="h3 card-title">
