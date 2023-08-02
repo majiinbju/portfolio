@@ -1,7 +1,9 @@
+@import url("pagination.css");
+
 /* project image */
 .project-img {
   min-width: 100%;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   opacity: 100%;
   transition: all 0.4s ease-in-out;
   animation: fadeIn 0.75s ease-in;
@@ -11,6 +13,7 @@
   from {
     filter: blur(3px);
   }
+
   to {
     filter: blur(0px);
   }
@@ -67,18 +70,18 @@
 }
 
 .gallery {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	animation: fadeIn 2s ease-in-out;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .gallery-img {
   width: 100%;
-	border-radius: 20px;
-	opacity: 100%;
-	transition: all 0.4s ease-in-out;
-	animation: fadeIn 1s ease-in-out;
+  /* border-radius: 20px; */
+  opacity: 100%;
+  transition: all 0.4s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 
 

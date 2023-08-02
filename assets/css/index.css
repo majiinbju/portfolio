@@ -105,4 +105,8 @@ img {
     opacity: 0.7;
   }
 
+  .pagination a:hover {
+    color: var(--color-one);
+  }
+
 }

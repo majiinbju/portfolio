@@ -11,7 +11,7 @@
 				</div>
 			</div>
 			<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Expand" aria-controls="nav">
-			<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="nav">
 				<!-- use lists for links -->

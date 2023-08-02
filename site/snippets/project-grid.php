@@ -1,6 +1,10 @@
+<?php 
+$projects = $page->children()->listed();
+?>
+
 <div class="container">
   <div class="project-grid">
-    <?php foreach ($page->children()->listed() as $project): ?>
+    <?php foreach ($projects as $project): ?>
       <div class="card">
         <a href="<?= $project->url() ?>">
           <div class="card-img-container ">
