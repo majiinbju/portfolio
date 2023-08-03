@@ -15,17 +15,17 @@
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="nav">
 				<!-- use lists for links -->
-				<ul class="navbar-nav d-flex">
+				<ul class="navbar-nav d-flex align-items-center">
 					<?php foreach ($site->children()->listed() as $item): ?>
 					<li class="nav-item me-md-5">
-						<a href="<?= $item->url() ?>" class="nav-link" aria-current="page">
-							<?= $item->title() ?>
+						<a <?php e($item->isOpen(), 'aria-current="page", class="text-decoration-underline"') ?> href="<?= $item->url() ?>" class="nav-link">
+							<?= $item->title()->esc() ?>
 						</a>
 					</li>
 					<?php endforeach ?>
 					<li class="nav-item">
-						<a class="nav-link disabled">
-							&copy; 2023
+						<a class="nav-link disabled" aria-current="copyright <?= date("Y"); ?>">
+							&copy; <?= date("Y"); ?>
 						</a>
 					</li>
 				</ul>

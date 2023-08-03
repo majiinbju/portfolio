@@ -4,8 +4,8 @@
     <?= $page->title()->smartypants(); ?>
   </h2>
   <!-- image -->
-  <div class="container d-flex flex-column justify-content-start">
     <?php snippet("project-image"); ?>
+  <div class="container d-flex flex-column justify-content-center col-md-8">
     <p class="summary p-4 mt-2 pb-0">
       <?= $page->summary()->smartypants(); ?>
     </p>

@@ -9,7 +9,7 @@
     "/assets/css/index.css",
     "/assets/css/templates/header.css"
   ]) ?>
-  <?= js("/assets/js/index.js", ['async' => true, 'defer' => true]) ?>
+  
   <?= css("@auto") ?>
 </head>
 

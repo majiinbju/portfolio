@@ -15,14 +15,6 @@ ul {
   padding: 0rem;
 }
 
-a {
-  margin: 0rem;
-  padding: 0rem;
-  color: currentColor;
-  text-decoration: none;
-  transition: all 0.25s ease-in-out;
-}
-
 /* Project Card */
 .card {
   background: none;
