@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container p-2">
     <a href="<?= $page->image()->url() ?>" data-toggle="lightbox" class="a">
         <img src="<?= $page->image()->url() ?>" alt="<?= $page->image()->alt() ?>" class="project-img lozad" />
         <?php if ($page->image()->alt()->isNotEmpty()) : ?>

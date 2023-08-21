@@ -1,4 +1,4 @@
-<ul class="d-md-flex flex-md-wrap justify-content-start tags mt-2 p-4">
+<ul class="d-md-flex flex-md-wrap justify-content-start tags mt-2 p-md-4">
    <?php if ($page->category()->isNotEmpty()) : ?>
       <li class="tag d-flex flex-column col-md-4 mb-md-3   ">
          <i>Category</i>

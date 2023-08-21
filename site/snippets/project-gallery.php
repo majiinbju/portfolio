@@ -13,7 +13,7 @@
 
     </a>
 
-    <div class="d-flex flex-column align-items-center justify-content-md-end p-5 col-md-8">
+    <div class="d-flex flex-column align-items-center justify-content-md-end p-md-5 col-md-8">
       <?php if ($image->heading()->isNotEmpty()) : ?>
       <strong class="align-self-start pt-5 pb-0 me-md-1 subheading ">
         <?= $image->heading()->smartypants() ?>
