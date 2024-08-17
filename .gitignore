@@ -5,12 +5,18 @@
 /vendor
 Icon
 .DS_Store
+.editorconfig
+.prettierrc
 
 # Temporary files
 # ---------------
 
 /media/*
 !/media/index.html
+
+# Content
+# ---------------
+/content/*
 
 # Lock files
 # ---------------
