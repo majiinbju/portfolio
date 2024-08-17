@@ -1,8 +1,7 @@
 title: Gallery Image
 
 accept:
-  mime: image/*
-  type: image
+  mime: null
   maxsize: 400000000
 
 fields:
