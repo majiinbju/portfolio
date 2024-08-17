@@ -1,5 +1,6 @@
 # System files
 # ------------
+
 .htaccess
 /kirby
 /vendor
@@ -16,6 +17,7 @@ Icon
 
 # Content
 # ---------------
+
 /content/*
 
 # Lock files
@@ -24,6 +26,7 @@ Icon
 
 # Editors
 # ---------------
+
 *.sublime-project
 *.sublime-workspace
 /.vscode
@@ -54,4 +57,5 @@ Icon
 
 # License
 # ---------------
+
 /site/config/.license
