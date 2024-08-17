@@ -13,11 +13,11 @@
 ## 🛠️ Technologies
 -  🧱 Website built using [KirbyCMS](https://getkirby.com)
 -  👨🏾‍🎨 [Bootstrap 5](https://getbootstrap.com)
--  👨🏾‍💻 [Bootstrap Lightbox] (https://ashleydw.github.io/lightbox/)
+-  👨🏾‍💻 [Bootstrap Lightbox](https://ashleydw.github.io/lightbox/)
 -  👷🏾‍♂️ JavaScript
 
 ## License
-Copyright © 2023 [Vivek Bajaj](https://github.com/majiinbju).  
+Copyright © 2024 [Vivek Bajaj](https://github.com/majiinbju).  
 This project is MIT licensed.
 
 ---
