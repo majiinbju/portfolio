@@ -1,7 +1,5 @@
-﻿# Welcome
+﻿# 👋🏾 Welcome
 I’m a communication designer with work spanning web design and development to identity design, graphic design, editorial design, data visualization and merchandising.
-
-🎓 *[Parsons School of Design](https://www.newschool.edu/parsons/)* 
 
 ## 🛠️ Technologies
 -  🧱 Website built using [KirbyCMS](https://getkirby.com)
@@ -9,7 +7,7 @@ I’m a communication designer with work spanning web design and development to 
 -  👨🏾‍💻 [Bootstrap Lightbox](https://ashleydw.github.io/lightbox/)
 -  👷🏾‍♂️ JavaScript
 
-## License
+## 🪪 License
 Copyright © 2024 [Vivek Bajaj](https://github.com/majiinbju).  
 This project is MIT licensed.
 
